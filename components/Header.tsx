@@ -1,4 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
+import Link from "@/components/Link.tsx";
 
 const menus = [
   { href: "/", name: "Home" },
@@ -17,13 +18,13 @@ const Header = (props: Pick<PageProps, "url">) => {
         <ul class="flex items-center gap-6">
           {menus.map((menu) => (
             <li key={menu.name}>
-              <a
+              <Link
                 href={menu.href}
-                class={"text-gray-500 hover:text-gray-700 hover:underline py-1 border-gray-500" +
+                class={"py-1" +
                   (pathname === menu.href ? " font-bold" : "")}
               >
                 {menu.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

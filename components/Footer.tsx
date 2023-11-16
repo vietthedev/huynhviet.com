@@ -1,6 +1,7 @@
 import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-github.tsx";
 import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-linkedin.tsx";
 import { VNode } from "preact";
+import Link from "@/components/Link.tsx";
 
 const menus: {
   title: string;
@@ -14,7 +15,7 @@ const menus: {
     ],
   },
   {
-    title: "Profiles",
+    title: "Links",
     children: [
       {
         name: "hlqviet",
@@ -42,8 +43,7 @@ const Footer = () => {
             <ul class="mt-2">
               {item.children.map((child) => (
                 <li class="mt-2" key={child.name}>
-                  <a
-                    class="text-gray-500 hover:text-gray-700"
+                  <Link
                     href={child.href}
                     title={child.title}
                     target="_blank"
@@ -51,7 +51,7 @@ const Footer = () => {
                     {child.icon
                       ? <span class="flex">{child.icon}{child.name}</span>
                       : child.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

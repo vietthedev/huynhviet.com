@@ -25,12 +25,9 @@ export default function App({ Component }: AppProps) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-          Việt Huỳnh - Software Engineer
-        </title>
       </head>
       <body
-        class="min-h-screen grid grid-rows-[auto_1fr_auto]"
+        class="min-h-screen grid grid-rows-[auto_1fr_auto] bg-gray-100"
         f-client-nav
       >
         <Partial name="body">

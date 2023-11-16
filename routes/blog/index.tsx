@@ -4,9 +4,9 @@ const Blog = () => {
   return (
     <>
       <Head>
-        <title>Việt Huỳnh - Software Engineer - Blog</title>
+        <title>Việt Huỳnh - Blog</title>
       </Head>
-      <div>Blog</div>
+      <div>Under construction</div>
     </>
   );
 };
