@@ -1,4 +1,5 @@
 import { AppProps } from "$fresh/server.ts";
+import { Partial } from "$fresh/runtime.ts";
 
 export default function App({ Component }: AppProps) {
   return (
@@ -28,8 +29,13 @@ export default function App({ Component }: AppProps) {
           Việt Huỳnh - Software Engineer
         </title>
       </head>
-      <body>
-        <Component />
+      <body
+        class="min-h-screen grid grid-rows-[auto_1fr_auto]"
+        f-client-nav
+      >
+        <Partial name="body">
+          <Component />
+        </Partial>
       </body>
     </html>
   );
