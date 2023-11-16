@@ -67,6 +67,10 @@ const Home = () => {
       <Head>
         <title>Việt Huỳnh - Portfolio</title>
         <meta property="og:title" content="Việt Huỳnh - Portfolio" />
+        <meta
+          property="og:description"
+          content="A software engineer based in Ho Chi Minh City."
+        />
         <meta property="og:type" content="profile" />
         <meta property="og:profile:first_name" content="Việt" />
         <meta property="og:profile:last_name" content="Huỳnh" />
@@ -149,7 +153,7 @@ const Home = () => {
                 <div class="flex flex-wrap gap-2">
                   {stack.map((item) => <Tag key={item}>{item}</Tag>)}
                 </div>
-                <span>{role}</span>
+                <div class="mt-2 text-right text-sm">{role}</div>
               </Card>
             </Link>
           ))}
