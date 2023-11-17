@@ -3,7 +3,7 @@ import { Partial } from "$fresh/runtime.ts";
 
 export default function App({ Component }: AppProps) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <link
           rel="apple-touch-icon"
