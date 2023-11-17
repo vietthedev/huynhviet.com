@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-linkedin.tsx";
 import IconMail from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/mail.tsx";
+import { BASE_URL } from "@/utils/constants.ts";
 import Card from "@/components/Card.tsx";
 import Tag from "@/components/Tag.tsx";
 import Link from "@/components/Link.tsx";
@@ -79,11 +80,11 @@ const Home = () => {
         <meta property="og:profile:gender" content="male" />
         <meta
           property="og:url"
-          content="https://huynhviet.com/"
+          content={BASE_URL}
         />
         <meta
           property="og:image"
-          content="https://huynhviet.com/profile-picture.png"
+          content={`${BASE_URL}/profile-picture.webp`}
         />
       </Head>
       <div class="px-4 py-8 max-w-4xl mx-auto flex flex-wrap justify-center prose">
@@ -93,7 +94,7 @@ const Home = () => {
             <img
               class="rounded-full"
               alt="Việt Huỳnh's profile picture"
-              src="/profile-picture.png"
+              src="/profile-picture.webp"
             />
           </div>
           <div>
