@@ -69,6 +69,10 @@ const Home = () => {
     <>
       <Head>
         <title>Việt Huỳnh - Portfolio</title>
+        <meta
+          property="description"
+          content="A software engineer based in Ho Chi Minh City."
+        />
         <meta property="og:title" content="Việt Huỳnh - Portfolio" />
         <meta
           property="og:description"
@@ -91,11 +95,15 @@ const Home = () => {
         <h2>About Me</h2>
         <section class="w-full flex flex-col md:flex-row justify-center items-center md:gap-4">
           <div class="max-w-[20rem]">
-            <img
-              class="rounded-full"
-              alt="Việt Huỳnh's profile picture"
-              src="/profile-picture.webp"
-            />
+            <picture>
+              <source srcset="/profile-picture.avif 800w" type="image/avif" />
+              <source srcset="/profile-picture.webp 800w" type="image/webp" />
+              <img
+                class="rounded-full"
+                alt="Việt Huỳnh's profile picture"
+                src="/profile-picture.webp"
+              />
+            </picture>
           </div>
           <div>
             <p>
