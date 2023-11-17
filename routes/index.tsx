@@ -70,7 +70,7 @@ const Home = () => {
       <Head>
         <title>Việt Huỳnh - Portfolio</title>
         <meta
-          property="description"
+          name="description"
           content="A software engineer based in Ho Chi Minh City."
         />
         <meta property="og:title" content="Việt Huỳnh - Portfolio" />
@@ -96,12 +96,22 @@ const Home = () => {
         <section class="w-full flex flex-col md:flex-row justify-center items-center md:gap-4">
           <div class="max-w-[20rem]">
             <picture>
-              <source srcset="/profile-picture.avif 800w" type="image/avif" />
+              <source
+                srcset="/profile-picture-400.avif"
+                type="image/avif"
+              />
+              <source
+                media="(min-width: 800px)"
+                srcset="/profile-picture-800.avif"
+                type="image/avif"
+              />
               <source srcset="/profile-picture.webp 800w" type="image/webp" />
               <img
                 class="rounded-full"
                 alt="Việt Huỳnh's profile picture"
                 src="/profile-picture.webp"
+                width="800"
+                height="800"
               />
             </picture>
           </div>
