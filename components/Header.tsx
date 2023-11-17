@@ -11,7 +11,7 @@ const Header = (props: Pick<PageProps, "url">) => {
 
   return (
     <header class="border-b border-gray-300">
-      <nav class="py-6 px-8 flex flex-col md:flex-row gap-4">
+      <nav class="py-6 px-8 md:px-32 flex flex-col md:flex-row gap-4">
         <div class="flex items-center flex-1">
           <a class="text-3xl font-bold" href="/">Việt Huỳnh</a>
         </div>

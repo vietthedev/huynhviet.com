@@ -35,8 +35,8 @@ const menus: {
 
 const Footer = () => {
   return (
-    <footer class="border-t border-gray-300 px-8 py-8 text-sm">
-      <div class="flex flex-col md:flex-row md:justify-center gap-8 md:gap-60">
+    <footer class="border-t border-gray-300 px-8 md:px-32 py-8 text-sm">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-60">
         {menus.map((item) => (
           <div class="mb-4" key={item.title}>
             <h2 class="text-xl md:text-2xl font-bold">{item.title}</h2>

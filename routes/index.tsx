@@ -5,29 +5,31 @@ import Card from "@/components/Card.tsx";
 import Tag from "@/components/Tag.tsx";
 import Link from "@/components/Link.tsx";
 
-const skills = {
-  languages: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-  ],
-  frameworks: [
-    "React",
-    "Next.js",
-    "Node.js",
-    "Tailwind",
-    "Material-UI",
-    "Ant Design",
-  ],
-  tools: [
-    "Windows",
-    "Linux",
-    "Visual Studio Code",
-    "GitHub Actions",
-    "Git",
-  ],
-};
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Express",
+  "Tailwind",
+  "Material UI",
+  "Ant Design",
+  "Jest",
+  "React Testing Library",
+  "Cypress",
+  "Playwright",
+  "Rest API",
+  "GraphQL",
+  "gRPC",
+  "Windows",
+  "Linux",
+  "Visual Studio Code",
+  "GitHub Actions",
+  "Git",
+];
 
 const projects = [
   {
@@ -113,28 +115,8 @@ const Home = () => {
         </section>
 
         <h2>Skills</h2>
-        <section class="w-full flex flex-col md:flex-row gap-4">
-          <Card class="md:w-1/3">
-            <ul class="!m-0">
-              {skills.languages.map((language) => (
-                <li key={language} class="!p-0">{language}</li>
-              ))}
-            </ul>
-          </Card>
-          <Card class="md:w-1/3">
-            <ul class="!m-0">
-              {skills.frameworks.map((framework) => (
-                <li key={framework} class="!p-0">{framework}</li>
-              ))}
-            </ul>
-          </Card>
-          <Card class="md:w-1/3">
-            <ul class="!m-0">
-              {skills.tools.map((tool) => (
-                <li key={tool} class="!p-0">{tool}</li>
-              ))}
-            </ul>
-          </Card>
+        <section class="w-full flex flex-wrap md:flex-row justify-center gap-2">
+          {skills.map((skill) => <Tag key={skill}>{skill}</Tag>)}
         </section>
 
         <h2>Projects</h2>
@@ -153,7 +135,7 @@ const Home = () => {
                 <div class="flex flex-wrap gap-2">
                   {stack.map((item) => <Tag key={item}>{item}</Tag>)}
                 </div>
-                <div class="mt-2 text-right text-sm">{role}</div>
+                <div class="mt-4 text-right text-sm">{role}</div>
               </Card>
             </Link>
           ))}
@@ -164,7 +146,7 @@ const Home = () => {
           <ul class="!m-0">
             <li class="!p-0">
               <Link
-                class="flex gap-2 !no-underline !hover:underline"
+                class="flex gap-2 !no-underline hover:!underline"
                 title="Email"
                 href="mailto:viet.huynhlamquoc@outlook.com"
               >
@@ -173,7 +155,7 @@ const Home = () => {
             </li>
             <li class="!p-0">
               <Link
-                class="flex gap-2 !no-underline !hover:underline"
+                class="flex gap-2 !no-underline hover:!underline"
                 title="LinkedIn"
                 href="https://www.linkedin.com/in/viet-huynh"
                 target="_blank"
@@ -183,7 +165,8 @@ const Home = () => {
             </li>
             <li class="!p-0">
               <Link
-                class="flex gap-2 !no-underline !hover:underline"
+                class="flex gap-2 !no-underline hover:!underline"
+                title="In-person"
                 href="https://maps.app.goo.gl/oZtQosTgCoWMhuuH7"
                 target="_blank"
               >
