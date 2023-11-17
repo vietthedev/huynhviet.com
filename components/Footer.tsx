@@ -42,7 +42,7 @@ const Footer = () => {
             <h2 class="text-xl md:text-2xl font-bold">{item.title}</h2>
             <ul class="mt-2">
               {item.children.map((child) => (
-                <li class="mt-2" key={child.name}>
+                <li class="mt-3" key={child.name}>
                   <Link
                     href={child.href}
                     title={child.title}
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div class="text-right text-gray-500 text-xs">
+      <div class="text-right text-gray-600 text-xs">
         &copy; Việt Huỳnh {new Date().getFullYear()}
       </div>
     </footer>
