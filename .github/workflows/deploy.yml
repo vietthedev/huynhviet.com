@@ -25,8 +25,6 @@ jobs:
 
       - name: Build step
         run: "deno task build"
-        env:
-          BASE_URL: ${{ vars.BASE_URL }}
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1

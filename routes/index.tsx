@@ -1,10 +1,11 @@
 import { Head } from "$fresh/runtime.ts";
+import { PageProps } from "$fresh/server.ts";
 import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-linkedin.tsx";
 import IconMail from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/mail.tsx";
-import { BASE_URL } from "@/utils/constants.ts";
 import Card from "@/components/Card.tsx";
 import Tag from "@/components/Tag.tsx";
 import Link from "@/components/Link.tsx";
+import Metadata from "@/components/Metadata.tsx";
 
 const skills = [
   "HTML",
@@ -64,31 +65,28 @@ const projects = [
   },
 ];
 
-const Home = () => {
+const Home = (props: PageProps) => {
+  const { url } = props;
+
   return (
     <>
       <Head>
-        <title>Việt Huỳnh - Portfolio</title>
-        <meta
-          name="description"
-          content="A software engineer based in Ho Chi Minh City."
-        />
-        <meta property="og:title" content="Việt Huỳnh - Portfolio" />
-        <meta
-          property="og:description"
-          content="A software engineer based in Ho Chi Minh City."
-        />
-        <meta property="og:type" content="profile" />
-        <meta property="og:profile:first_name" content="Việt" />
-        <meta property="og:profile:last_name" content="Huỳnh" />
-        <meta property="og:profile:gender" content="male" />
-        <meta
-          property="og:url"
-          content={BASE_URL}
-        />
-        <meta
-          property="og:image"
-          content={`${BASE_URL}/profile-picture.webp`}
+        <Metadata
+          canonical={url.origin}
+          description="A software engineer based in Ho Chi Minh City"
+          og={{
+            title: "Việt Huỳnh - Portfolio",
+            description: "A software engineer based in Ho Chi Minh City",
+            type: "profile",
+            profile: {
+              first_name: "Việt",
+              last_name: "Huỳnh",
+              gender: "male",
+            },
+            url: url.origin,
+            image: `${url.origin}/profile-picture.webp`,
+          }}
+          title="Việt Huỳnh - Portfolio"
         />
       </Head>
       <div class="px-4 py-8 max-w-4xl mx-auto flex flex-wrap justify-center prose">
@@ -101,7 +99,7 @@ const Home = () => {
                 type="image/avif"
               />
               <source
-                media="(min-width: 800px)"
+                media="(min-width: 500px)"
                 srcset="/profile-picture-800.avif"
                 type="image/avif"
               />
