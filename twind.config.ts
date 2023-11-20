@@ -1,9 +1,15 @@
-import { Options } from "$fresh/plugins/twind.ts";
-import typography from "@twind/typography";
+import { defineConfig } from "@twind/core";
+import presetAutoprefix from "@twind/preset-autoprefix";
+import presetTailwind from "@twind/preset-tailwind";
+import presetTypography from "@twind/preset-typography";
 
 export default {
-  plugins: {
-    ...typography(),
-  },
+  ...defineConfig({
+    presets: [
+      presetTypography(),
+      presetTailwind(),
+      presetAutoprefix(),
+    ],
+  }),
   selfURL: import.meta.url,
-} as Options;
+};
