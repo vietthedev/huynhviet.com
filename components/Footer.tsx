@@ -41,11 +41,11 @@ const Footer = () => {
     <footer class="border-t border-gray-300 px-8 md:px-32 py-8 text-sm">
       <div class="flex flex-col md:flex-row gap-8 md:gap-60">
         {menus.map((item) => (
-          <div class="mb-4" key={item.title}>
-            <Title class="!font-bold">{item.title}</Title>
+          <div key={item.title}>
+            <Title>{item.title}</Title>
             <List class="list-none">
               {item.children.map((child) => (
-                <List.Item class="first:mt-0 ml-0" key={child.name}>
+                <List.Item class="first:!mt-0 !ml-0" key={child.name}>
                   <Link
                     href={child.href}
                     title={child.title}
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div class="text-right text-gray-600 text-xs">
+      <div class="mt-4 text-right text-gray-600 text-xs">
         &copy; Việt Huỳnh {new Date().getFullYear()}
       </div>
     </footer>

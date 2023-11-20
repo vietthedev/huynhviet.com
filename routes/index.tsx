@@ -136,7 +136,7 @@ const Home = (props: PageProps) => {
           {projects.map(({ name, description, stack, role, url }) => (
             <Link
               key={name}
-              class="hover:no-underline"
+              class="hover:!no-underline"
               title={name}
               href={url}
               target="_blank"

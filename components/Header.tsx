@@ -14,7 +14,9 @@ const Header = (props: Pick<PageProps, "url">) => {
     <header class="border-b border-gray-300">
       <nav class="py-6 px-8 md:px-32 flex flex-col md:flex-row gap-4">
         <div class="flex items-center flex-1">
-          <Link class="text-3xl font-bold" href="/">Việt Huỳnh</Link>
+          <Link class="text-3xl font-bold hover:!no-underline" href="/">
+            Việt Huỳnh
+          </Link>
         </div>
         <List class="flex items-center gap-6 list-none">
           {menus.map((menu) => (
