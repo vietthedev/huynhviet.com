@@ -6,6 +6,11 @@ import Card from "@/components/Card.tsx";
 import Tag from "@/components/Tag.tsx";
 import Link from "@/components/Link.tsx";
 import Metadata from "@/components/Metadata.tsx";
+import Title from "@/components/Typography/Title.tsx";
+import Paragraph from "@/components/Typography/Paragraph.tsx";
+import List from "@/components/List.tsx";
+import Text from "@/components/Typography/Text.tsx";
+import Subtitle from "@/components/Typography/Subtitle.tsx";
 
 const skills = [
   "HTML",
@@ -89,66 +94,56 @@ const Home = (props: PageProps) => {
           title="Việt Huỳnh - Portfolio"
         />
       </Head>
-      <div class="px-4 py-8 max-w-4xl mx-auto flex flex-wrap justify-center prose">
-        <h2>About Me</h2>
-        <section class="w-full flex flex-col md:flex-row justify-center items-center md:gap-4">
+      <div class="px-4 py-8 max-w-4xl mx-auto flex flex-wrap justify-center">
+        <Title>About Me</Title>
+        <section class="mb-8 w-full flex flex-col md:flex-row justify-center items-center md:gap-4">
           <div class="max-w-[20rem]">
-            <picture>
-              <source
-                srcset="/profile-picture-400.avif"
-                type="image/avif"
-              />
-              <source
-                media="(min-width: 500px)"
-                srcset="/profile-picture-800.avif"
-                type="image/avif"
-              />
-              <source srcset="/profile-picture.webp 800w" type="image/webp" />
-              <img
-                class="rounded-full"
-                alt="Việt Huỳnh's profile picture"
-                src="/profile-picture.webp"
-                width="800"
-                height="800"
-              />
-            </picture>
+            <img
+              class="rounded-full"
+              alt="Việt Huỳnh's profile picture"
+              src="/profile-picture.webp"
+              srcset="/profile-picture-400.avif 400w, /profile-picture-800.avif 800w"
+              sizes="(max-width: 500px) 400px, 800px"
+              width="800"
+              height="800"
+            />
           </div>
           <div>
-            <p>
+            <Paragraph>
               Hi. My name is Việt Huỳnh (Viet Huynh). I am a software engineer
               based in Ho Chi Minh City, Vietnam.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               I have been working on web applications since 2015. Today I mainly
               use JavaScript/TypeScript, React and Node.js with a variety of
               other tools, libraries and frameworks.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               Besides software development, I also have interests in other techy
               stuff such as video encoding, audio equipments and motorbike
               retrofitting. And I do play video games, too.
-            </p>
+            </Paragraph>
           </div>
         </section>
 
-        <h2>Skills</h2>
-        <section class="w-full flex flex-wrap md:flex-row justify-center gap-2">
+        <Title>Skills</Title>
+        <section class="mb-8 w-full flex flex-wrap md:flex-row justify-center gap-2">
           {skills.map((skill) => <Tag key={skill}>{skill}</Tag>)}
         </section>
 
-        <h2>Projects</h2>
-        <section class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Title>Projects</Title>
+        <section class="mb-8 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map(({ name, description, stack, role, url }) => (
             <Link
               key={name}
-              class="!no-underline aspect-square"
+              class="hover:no-underline"
               title={name}
               href={url}
               target="_blank"
             >
               <Card>
-                <h3 class="!mt-0">{name}</h3>
-                <p>{description}</p>
+                <Subtitle>{name}</Subtitle>
+                <Paragraph>{description}</Paragraph>
                 <div class="flex flex-wrap gap-2">
                   {stack.map((item) => <Tag key={item}>{item}</Tag>)}
                 </div>
@@ -158,40 +153,40 @@ const Home = (props: PageProps) => {
           ))}
         </section>
 
-        <h2>Contact</h2>
+        <Title>Contact</Title>
         <section class="w-full flex flex-col md:flex-row justify-center">
-          <ul class="!m-0">
-            <li class="!p-0">
+          <List class="list-none">
+            <List.Item>
               <Link
-                class="flex gap-2 !no-underline hover:!underline"
+                class="flex gap-2"
                 title="Email"
                 href="mailto:viet.huynhlamquoc@outlook.com"
               >
                 <IconMail /> viet.huynhlamquoc@outlook.com
               </Link>
-            </li>
-            <li class="!p-0">
+            </List.Item>
+            <List.Item>
               <Link
-                class="flex gap-2 !no-underline hover:!underline"
+                class="flex gap-2"
                 title="LinkedIn"
                 href="https://www.linkedin.com/in/viet-huynh"
                 target="_blank"
               >
                 <IconBrandLinkedin /> linkedin.com/in/viet-huynh
               </Link>
-            </li>
-            <li class="!p-0">
+            </List.Item>
+            <List.Item>
               <Link
-                class="flex gap-2 !no-underline hover:!underline"
+                class="flex gap-2"
                 title="In-person"
                 href="https://maps.app.goo.gl/oZtQosTgCoWMhuuH7"
                 target="_blank"
               >
-                <span>🧑‍🤝‍🧑</span>
-                <span>Ho Chi Minh City, Vietnam</span>
+                <Text>🧑‍🤝‍🧑</Text>
+                <Text>Ho Chi Minh City, Vietnam</Text>
               </Link>
-            </li>
-          </ul>
+            </List.Item>
+          </List>
         </section>
       </div>
     </>

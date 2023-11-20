@@ -27,7 +27,7 @@ export default function App({ Component }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body
-        class="min-h-screen grid grid-rows-[auto_1fr_auto] bg-gray-100"
+        class="min-h-screen grid grid-rows-[auto_1fr_auto] bg-gray-100 text-gray-700"
         f-client-nav
       >
         <Partial name="body">

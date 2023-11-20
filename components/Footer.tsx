@@ -2,6 +2,9 @@ import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/bran
 import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-linkedin.tsx";
 import { VNode } from "preact";
 import Link from "@/components/Link.tsx";
+import Title from "@/components/Typography/Title.tsx";
+import List from "@/components/List.tsx";
+import Text from "@/components/Typography/Text.tsx";
 
 const menus: {
   title: string;
@@ -39,22 +42,27 @@ const Footer = () => {
       <div class="flex flex-col md:flex-row gap-8 md:gap-60">
         {menus.map((item) => (
           <div class="mb-4" key={item.title}>
-            <h2 class="text-xl md:text-2xl font-bold">{item.title}</h2>
-            <ul class="mt-2">
+            <Title class="!font-bold">{item.title}</Title>
+            <List class="list-none">
               {item.children.map((child) => (
-                <li class="mt-3" key={child.name}>
+                <List.Item class="first:mt-0 ml-0" key={child.name}>
                   <Link
                     href={child.href}
                     title={child.title}
                     target="_blank"
                   >
                     {child.icon
-                      ? <span class="flex">{child.icon}{child.name}</span>
+                      ? (
+                        <Text class="flex items-center">
+                          {child.icon}
+                          {child.name}
+                        </Text>
+                      )
                       : child.name}
                   </Link>
-                </li>
+                </List.Item>
               ))}
-            </ul>
+            </List>
           </div>
         ))}
       </div>
