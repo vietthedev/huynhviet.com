@@ -38,7 +38,7 @@ const menus: {
 
 const Footer = () => {
   return (
-    <footer class="border-t border-gray-300 px-8 md:px-32 py-8 text-sm">
+    <footer class="border-t border-gray-300 px-8 md:px-32 py-8">
       <div class="flex flex-col md:flex-row gap-8 md:gap-60">
         {menus.map((item) => (
           <div key={item.title}>
@@ -66,8 +66,22 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div class="mt-4 text-right text-gray-600 text-xs">
-        &copy; Việt Huỳnh {new Date().getFullYear()}
+      <div class="mt-4 flex justify-between text-gray-600">
+        <Link href="https://fresh.deno.dev" target="_blank">
+          <picture>
+            <source
+              srcset="https://fresh.deno.dev/fresh-badge-dark.svg"
+              media="(prefers-color-scheme: dark)"
+            />
+            <img
+              width="197"
+              height="37"
+              src="https://fresh.deno.dev/fresh-badge.svg"
+              alt="Made with Fresh"
+            />
+          </picture>
+        </Link>
+        <Text>&copy; Việt Huỳnh {new Date().getFullYear()}</Text>
       </div>
     </footer>
   );
