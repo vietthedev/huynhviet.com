@@ -98,15 +98,25 @@ const Home = (props: PageProps) => {
         <Title>About Me</Title>
         <section class="mb-8 w-full flex flex-col md:flex-row justify-center items-center md:gap-4">
           <div class="max-w-[20rem]">
-            <img
-              class="rounded-full"
-              alt="Việt Huỳnh's profile picture"
-              src="/profile-picture.webp"
-              srcset="/profile-picture-400.avif 400w, /profile-picture-800.avif 800w"
-              sizes="(max-width: 500px) 400px, 800px"
-              width="800"
-              height="800"
-            />
+            <picture>
+              <source
+                media="(max-width: 499px)"
+                srcset="/profile-picture-400.avif"
+                type="image/avif"
+              />
+              <source
+                media="(min-width: 500px)"
+                srcset="/profile-picture-800.avif"
+                type="image/avif"
+              />
+              <img
+                class="rounded-full"
+                alt="Việt Huỳnh's profile picture"
+                src="/profile-picture.webp"
+                width="800"
+                height="800"
+              />
+            </picture>
           </div>
           <div>
             <Paragraph>
