@@ -1,4 +1,3 @@
-import { PageProps } from "$fresh/server.ts";
 import Link from "@/components/Link.tsx";
 import List from "@/components/List.tsx";
 
@@ -7,9 +6,7 @@ const menus = [
   { href: "/blog", name: "Blog" },
 ];
 
-const Header = (props: Pick<PageProps, "url">) => {
-  const { url: { pathname } } = props;
-
+const Header = () => {
   return (
     <header class="border-b border-gray-300">
       <nav class="py-6 px-8 md:px-32 flex flex-col md:flex-row gap-4">
@@ -23,8 +20,7 @@ const Header = (props: Pick<PageProps, "url">) => {
             <List.Item key={menu.name} class="ml-0 mt-0">
               <Link
                 href={menu.href}
-                class={"py-1" +
-                  (pathname === menu.href ? " font-bold" : "")}
+                class="py-1 data-[current]:font-bold"
               >
                 {menu.name}
               </Link>
