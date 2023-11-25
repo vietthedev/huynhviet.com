@@ -11,6 +11,7 @@ import Paragraph from "@/components/Typography/Paragraph.tsx";
 import List from "@/components/List.tsx";
 import Text from "@/components/Typography/Text.tsx";
 import Subtitle from "@/components/Typography/Subtitle.tsx";
+import { ProjectRole } from "@/lib/enums.ts";
 
 const skills = [
   "HTML",
@@ -43,7 +44,7 @@ const projects = [
     name: "huynhviet.com",
     description: "This personal website",
     stack: ["TypeScript", "Preact", "Tailwind", "Fresh", "Deno"],
-    role: "Maintainer",
+    role: ProjectRole.Author,
     url: "https://github.com/hlqviet/huynhviet.com",
   },
   {
@@ -51,21 +52,21 @@ const projects = [
     description:
       "Utilise Cloudflare Zero Trust Gateway as a DNS filtering solution",
     stack: ["JavaScript", "Node.js"],
-    role: "Contributor",
+    role: ProjectRole.Contributor,
     url: "https://github.com/mrrfv/cloudflare-gateway-pihole-scripts",
   },
   {
     name: "Next Portfolio",
     description: "The old portfolio",
     stack: ["TypeScript", "React", "Next.js", "Node.js"],
-    role: "Maintainer",
+    role: ProjectRole.Contributor,
     url: "https://github.com/hlqviet/next-portfolio",
   },
   {
     name: "VTV Giai Tri Grabber",
     description: "Get video URLs from the VTV Giai tri streaming service",
     stack: ["JavaScript", "React", "Node.js"],
-    role: "Maintainer",
+    role: ProjectRole.Contributor,
     url: "https://github.com/hlqviet/vtv-giai-tri-grabber",
   },
 ];
