@@ -59,14 +59,14 @@ const projects = [
     name: "Next Portfolio",
     description: "The old portfolio",
     stack: ["TypeScript", "React", "Next.js", "Node.js"],
-    role: ProjectRole.Contributor,
+    role: ProjectRole.Author,
     url: "https://github.com/hlqviet/next-portfolio",
   },
   {
     name: "VTV Giai Tri Grabber",
     description: "Get video URLs from the VTV Giai tri streaming service",
     stack: ["JavaScript", "React", "Node.js"],
-    role: ProjectRole.Contributor,
+    role: ProjectRole.Author,
     url: "https://github.com/hlqviet/vtv-giai-tri-grabber",
   },
 ];
