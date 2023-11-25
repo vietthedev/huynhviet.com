@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 
-export default function Error404() {
+const Error404 = () => {
   return (
     <>
       <Head>
@@ -24,4 +24,6 @@ export default function Error404() {
       </div>
     </>
   );
-}
+};
+
+export default Error404;

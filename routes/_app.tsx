@@ -1,7 +1,9 @@
 import { AppProps } from "$fresh/server.ts";
 import { Partial } from "$fresh/runtime.ts";
 
-export default function App({ Component }: AppProps) {
+const App = (props: AppProps) => {
+  const { Component } = props;
+
   return (
     <html lang="en">
       <head>
@@ -36,4 +38,6 @@ export default function App({ Component }: AppProps) {
       </body>
     </html>
   );
-}
+};
+
+export default App;
