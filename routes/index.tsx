@@ -170,9 +170,9 @@ const Home = (props: PageProps) => {
               <Link
                 class="flex gap-2"
                 title="Email"
-                href="mailto:viet.huynhlamquoc@outlook.com"
+                href="mailto:contact@huynhviet.com"
               >
-                <IconMail /> viet.huynhlamquoc@outlook.com
+                <IconMail /> contact@huynhviet.com
               </Link>
             </List.Item>
             <List.Item>
