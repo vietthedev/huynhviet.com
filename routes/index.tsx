@@ -143,7 +143,7 @@ const Home = (props: PageProps) => {
         </section>
 
         <Title>Projects</Title>
-        <section class="mb-8 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section class="mb-8 w-full grid auto-rows-fr grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map(({ name, description, stack, role, url }) => (
             <Link
               key={name}
@@ -152,13 +152,13 @@ const Home = (props: PageProps) => {
               href={url}
               target="_blank"
             >
-              <Card>
-                <Subtitle>{name}</Subtitle>
-                <Paragraph>{description}</Paragraph>
+              <Card class="flex flex-col h-full justify-between gap-3">
+                <Subtitle class="!mb-0">{name}</Subtitle>
+                <Paragraph class="!my-0">{description}</Paragraph>
                 <div class="flex flex-wrap gap-2">
                   {stack.map((item) => <Tag key={item}>{item}</Tag>)}
                 </div>
-                <div class="mt-4 text-right text-sm">{role}</div>
+                <div class="text-right text-sm italic">{role}</div>
               </Card>
             </Link>
           ))}
