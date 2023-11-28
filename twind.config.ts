@@ -1,12 +1,12 @@
-import { defineConfig } from "@twind/core";
+import { defineConfig, Preset } from "@twind/core";
 import presetAutoprefix from "@twind/preset-autoprefix";
 import presetTailwind from "@twind/preset-tailwind";
-import presetTypography from "@twind/preset-typography";
+import presetTypography, { TypographyTheme } from "@twind/preset-typography";
 
 export default {
   ...defineConfig({
     presets: [
-      presetTypography(),
+      presetTypography() as Preset<TypographyTheme>,
       presetTailwind(),
       presetAutoprefix(),
     ],
