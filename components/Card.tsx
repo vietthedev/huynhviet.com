@@ -10,7 +10,7 @@ const Card = (props: CardProps) => {
 
   return (
     <div
-      class={`p-4 rounded-lg bg-gray-200 hover:shadow transition ${
+      class={`p-4 rounded-lg bg-gray-200 hover:shadow transition motion-reduce:transition-none ${
         props.class ?? ""
       }`}
     >
