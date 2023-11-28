@@ -57,7 +57,7 @@ const Hamburger = (props: HamburgerProps) => {
         &nbsp;
       </div>
       <div class="fixed top-0 left-0 z-40 h-full w-full -translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
-        <div class="float-left min-h-full w-[85%] bg-white px-6 pt-12 shadow-2xl">
+        <div class="float-left min-h-full w-[85%] bg-gray-100 px-6 pt-12 shadow-2xl">
           {children}
         </div>
       </div>
