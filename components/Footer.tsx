@@ -5,6 +5,7 @@ import Link from "@/components/Link.tsx";
 import Title from "@/components/Typography/Title.tsx";
 import List from "@/components/List.tsx";
 import Text from "@/components/Typography/Text.tsx";
+import { NAV_ITEMS } from "@/lib/constants.ts";
 
 const menus: {
   title: string;
@@ -12,10 +13,7 @@ const menus: {
 }[] = [
   {
     title: "Navigation",
-    children: [
-      { name: "Home", href: "/" },
-      { name: "Blog", href: "/blog" },
-    ],
+    children: NAV_ITEMS,
   },
   {
     title: "Links",
