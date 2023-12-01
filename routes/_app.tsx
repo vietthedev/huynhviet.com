@@ -1,8 +1,8 @@
-import { AppProps } from "$fresh/server.ts";
+import { PageProps } from "$fresh/server.ts";
 import { Partial } from "$fresh/runtime.ts";
 import nightwind from "nightwind/helper.js";
 
-const App = (props: AppProps) => {
+const App = (props: PageProps) => {
   const { Component } = props;
 
   return (
