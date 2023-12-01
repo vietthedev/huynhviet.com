@@ -12,6 +12,7 @@ import List from "@/components/List.tsx";
 import Text from "@/components/Typography/Text.tsx";
 import Subtitle from "@/components/Typography/Subtitle.tsx";
 import { ProjectRole } from "@/lib/enums.ts";
+import Container from "@/components/Container.tsx";
 
 const skills = [
   "HTML",
@@ -95,7 +96,7 @@ const Home = (props: PageProps) => {
           title="Việt Huỳnh - Portfolio"
         />
       </Head>
-      <div class="px-4 py-8 max-w-4xl mx-auto flex flex-wrap justify-center">
+      <Container class="flex flex-wrap justify-center">
         <Title>About Me</Title>
         <section class="mb-8 w-full flex flex-col md:flex-row justify-center items-center md:gap-4">
           <div class="max-w-[20rem]">
@@ -199,7 +200,7 @@ const Home = (props: PageProps) => {
             </List.Item>
           </List>
         </section>
-      </div>
+      </Container>
     </>
   );
 };
