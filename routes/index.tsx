@@ -167,7 +167,7 @@ const Home = (props: PageProps) => {
         <Title>Contact</Title>
         <section class="w-full flex flex-col md:flex-row justify-center">
           <List class="list-none">
-            <List.Item>
+            <List.Item class="!ml-0">
               <Link
                 class="flex gap-2"
                 title="Email"
@@ -176,7 +176,7 @@ const Home = (props: PageProps) => {
                 <IconMail /> contact@huynhviet.com
               </Link>
             </List.Item>
-            <List.Item>
+            <List.Item class="!ml-0">
               <Link
                 class="flex gap-2"
                 title="LinkedIn"
@@ -186,7 +186,7 @@ const Home = (props: PageProps) => {
                 <IconBrandLinkedin /> linkedin.com/in/viet-huynh
               </Link>
             </List.Item>
-            <List.Item>
+            <List.Item class="!ml-0">
               <Link
                 class="flex gap-2"
                 title="In-person"
