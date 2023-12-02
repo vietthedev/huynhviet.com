@@ -18,7 +18,7 @@ const Header = () => {
             <List.Item key={item.name} class="!ml-0 !mt-0">
               <Link
                 href={item.href}
-                class="py-1 data-[current]:font-bold"
+                class="py-1 aria-[current='page']:font-bold"
               >
                 {item.name}
               </Link>
@@ -37,7 +37,7 @@ const Header = () => {
               <List.Item key={item.name}>
                 <Link
                   href={item.href}
-                  class="py-1 data-[current]:font-bold"
+                  class="py-1 aria-[current='page']:font-bold"
                 >
                   {item.name}
                 </Link>
