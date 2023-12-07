@@ -70,6 +70,13 @@ const projects = [
     role: ProjectRole.Author,
     url: "https://github.com/hlqviet/vtv-giai-tri-grabber",
   },
+  {
+    name: "Docker-Py-Revanced",
+    description: "One Click Python util to build all Revanced apps",
+    stack: ["Python", "Docker", "GitHub Actions"],
+    role: ProjectRole.Contributor,
+    url: "https://github.com/nikhilbadyal/docker-py-revanced",
+  },
 ];
 
 const Home = (props: PageProps) => {
