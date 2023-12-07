@@ -51,7 +51,7 @@ const Footer = () => {
                   >
                     {child.icon
                       ? (
-                        <Text class="flex items-center">
+                        <Text class="flex items-center gap-2">
                           {child.icon}
                           {child.name}
                         </Text>
