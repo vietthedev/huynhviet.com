@@ -36,7 +36,7 @@ const menus: {
 
 const Footer = () => {
   return (
-    <footer class="border-t border-gray-300 px-8 md:px-32 py-8">
+    <footer class="border-t border-gray-300 dark:border-gray-600 px-8 md:px-32 py-8">
       <div class="flex flex-col md:flex-row gap-8 md:gap-60">
         {menus.map((item) => (
           <div key={item.title}>
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div class="mt-4 flex flex-col-reverse md:flex-row md:justify-between gap-3 text-gray-600">
+      <div class="mt-4 flex flex-col-reverse md:flex-row md:justify-between gap-3 text-gray-600 dark:text-gray-300">
         <Link href="https://fresh.deno.dev" target="_blank">
           <picture>
             <source

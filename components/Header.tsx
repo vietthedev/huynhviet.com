@@ -6,7 +6,7 @@ import { NAV_ITEMS } from "@/lib/constants.ts";
 
 const Header = () => {
   return (
-    <header class="border-b border-gray-300">
+    <header class="border-b border-gray-300 dark:border-gray-600">
       <nav class="py-6 px-8 md:px-32 flex items-center md:flex-row gap-4">
         <div class="flex items-center flex-1">
           <Link class="text-3xl font-bold hover:!no-underline" href="/">
