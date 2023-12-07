@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div class="mt-4 flex flex-col-reverse md:flex-row md:justify-between gap-3 text-gray-600 dark:text-gray-300">
+      <div class="mt-4 flex flex-col items-end md:flex-row md:justify-between md:items-center gap-3 text-gray-600 dark:text-gray-300">
         <Link href="https://fresh.deno.dev" target="_blank">
           <picture>
             <source
