@@ -98,7 +98,12 @@ const Home = (props: PageProps) => {
               gender: "male",
             },
             url: url.origin,
-            image: `${url.origin}/profile-picture.webp`,
+            image: {
+              url: `${url.origin}/profile-picture.webp`,
+              width: "800",
+              height: "800",
+              type: "image/webp",
+            },
           }}
           title="Việt Huỳnh - Portfolio"
         />
