@@ -86,30 +86,44 @@ const About = (props: PageProps) => {
             technical stack at the company was almost new to me, from
             TypeScript, React, GraphQL, gRPC to unit testing. I could learn a
             lot and even had the opportunity to get involved in CI/CD with
-            GitHub Actions and test automation with Cypress and Playwright.
-            Another good thing was that I also had cool teammates who were
-            always willing to support me. It went well until something happened
-            on my side so I left the company and came to{" "}
+            GitHub Actions and test automation with Cypress and Playwright. The
+            opportunity to learn was not the only good thing I got there, I also
+            had cool teammates who were always willing to support me. It went
+            well until something happened on my side so I left the company and
+            came to{" "}
             <Link href="https://www.ninjavan.co/" target="_blank">
               Ninja Van
             </Link>{" "}
-            in 2022. There I had the chance to work with Next.js, which is a
-            React framework I had not worked with before. I was also able to
-            inspire the team members to migrate from JavaScript to TypeScript
-            and contributed many unit tests to the team's codebase.
+            in 2022. There I had the chance to work with Next.js, a React
+            framework I had not worked with before. I was the first to get the
+            migration to TypeScript started and inspired team members to migrate
+            from JavaScript to TypeScript and contributed a lot of complex unit
+            tests to the team's codebase, which could serve as examples for
+            others.
           </p>
           <p>
-            Now leave those programming things aside. I am not such a nerdy
-            techie who is all into technologies. I am an ordinary person and
-            have hobbies just like you. I like listening to music, watching
-            movies and hanging out with friends. I also like going around the
-            city to explore coffee shops and cocktail bars. And I can sing.
-            Surprising enough? I do phone photography once in a while. Want more
-            surprise? I also often have my bike retrofitted. Haha! So that is
+            Now let's leave those programming things aside. I am not such a
+            nerdy techie who is all into technologies. I am an ordinary person
+            and have hobbies just like everyone else. To entertain myself, I
+            usually listen to music, watch movies and hang out with friends. I
+            would go around the city to explore coffee shops and cocktail bars
+            when I need to calm my mind. I may take photos during the time since
+            I have an interest in phone photography. I own a Nokia 808 PureView,
+            a Pixel 4 XL and an iPhone 14 Pro Max currently but I mostly use the
+            Pixel because it has a great modded camera app that allows me to
+            tune the settings. You can see my photos on{" "}
+            <Link href="https://flic.kr/ps/ApMou" target="_blank">Flickr</Link>
+            {" "}
+            or{" "}
+            <Link href="https://instagr.am/hlqviet/" target="_blank">
+              Instagram
+            </Link>. I like singing too so you may see me singing at a coffee
+            shop if I am in a good mood and, well, have the desire. So that is
             pretty much about me.
           </p>
           <p>
-            These are my presences on social networks:
+            Here are my presences on social networks if you want to connect with
+            me:
           </p>
           <ul>
             <li>
