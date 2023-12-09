@@ -66,12 +66,12 @@ const About = (props: PageProps) => {
             <Link href="https://www.nashtechglobal.com/" target="_blank">
               NashTech
             </Link>{" "}
-            in 2015. I was a full-stack engineer and worked mostly with ASP.NET
-            MVC, Entity Framework and jQuery. I was still a newbie at the time
-            so I learned many things such as software development process,
-            software development principles and practices. After working for a
-            while, I became interested in the JavaScript ecosystem. I took the
-            role at{" "}
+            (formerly Harvey Nash) in 2015. I was a full-stack engineer and
+            worked mostly with ASP.NET MVC, Entity Framework and jQuery. I was
+            still a newbie at the time so I learned many things such as software
+            development process, software development principles and practices.
+            After working for a while, I became interested in the JavaScript
+            ecosystem. I took the role at{" "}
             <Link href="https://www.knorex.com/" target="_blank">KNOREX</Link>
             {" "}
             in 2018 and started with AngularJS and Node.js. That was also the
