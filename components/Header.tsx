@@ -7,25 +7,7 @@ import { NAV_ITEMS } from "@/lib/constants.ts";
 const Header = () => {
   return (
     <header class="border-b border-gray-300 dark:border-gray-600">
-      <nav class="py-6 px-8 md:px-32 flex items-center md:flex-row gap-4">
-        <div class="flex items-center flex-1">
-          <Link class="text-3xl font-bold hover:!no-underline" href="/">
-            Việt Huỳnh
-          </Link>
-        </div>
-        <List class="hidden lg:flex items-center gap-6 list-none">
-          {NAV_ITEMS.map((item) => (
-            <List.Item key={item.name} class="!ml-0 !mt-0">
-              <Link
-                href={item.href}
-                class="py-1 aria-[current='page']:font-bold"
-              >
-                {item.name}
-              </Link>
-            </List.Item>
-          ))}
-        </List>
-
+      <nav class="py-6 px-4 md:px-32 flex items-center md:flex-row gap-4">
         <Hamburger>
           <Link class="text-3xl font-bold hover:!no-underline" href="/">
             <Title>
@@ -45,6 +27,23 @@ const Header = () => {
             ))}
           </List>
         </Hamburger>
+        <div class="flex items-center flex-1">
+          <Link class="text-3xl font-bold hover:!no-underline" href="/">
+            Việt Huỳnh
+          </Link>
+        </div>
+        <List class="hidden lg:flex items-center gap-6 list-none">
+          {NAV_ITEMS.map((item) => (
+            <List.Item key={item.name} class="!ml-0 !mt-0">
+              <Link
+                href={item.href}
+                class="py-1 aria-[current='page']:font-bold"
+              >
+                {item.name}
+              </Link>
+            </List.Item>
+          ))}
+        </List>
       </nav>
     </header>
   );
