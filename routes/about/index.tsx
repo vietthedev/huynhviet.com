@@ -11,7 +11,7 @@ const About = (props: PageProps) => {
     <>
       <Head>
         <Metadata
-          canonical={url.origin}
+          canonical={url.href}
           description="A software engineer based in Ho Chi Minh City"
           og={{
             title: "Việt Huỳnh - About",
@@ -22,7 +22,7 @@ const About = (props: PageProps) => {
               last_name: "Huỳnh",
               gender: "male",
             },
-            url: url.origin,
+            url: url.href,
             image: {
               url: `${url.origin}/profile-picture.webp`,
               width: "800",
@@ -45,15 +45,14 @@ const About = (props: PageProps) => {
             <Link href="https://nsis.sourceforge.io/Main_Page" target="_blank">
               NSIS
             </Link>{" "}
-            scripts to create alternative update installers, which were less in
-            size compared to the one from the publisher thanks to delta patching
-            for{" "}
+            scripts to create alternative update installers for{" "}
             <Link
               href="https://en.wikipedia.org/wiki/Audition_Online"
               target="_blank"
             >
               Audition Online
-            </Link>, my favourite game at the time.
+            </Link>, my favourite game at the time, which were less in size
+            compared to the one from the publisher thanks to delta patching.
           </p>
           <p>
             I decided to pursue Software Engineering in university afterward. I
@@ -115,20 +114,45 @@ const About = (props: PageProps) => {
             when I need to calm my mind. I may take photos during the time since
             I have an interest in phone photography. I own a Nokia 808 PureView,
             a Pixel 4 XL and an iPhone 14 Pro Max currently but I mostly use the
-            Pixel because it has a great modded camera app that allows me to
-            tune the settings. You can see my photos on{" "}
+            Pixel since it has a great modded camera app that allows me to tune
+            various photo capturing settings such as noise reduction strength,
+            saturation and sharpness. You can see my photos on{" "}
             <Link href="https://flic.kr/ps/ApMou" target="_blank">Flickr</Link>
             {" "}
             or{" "}
             <Link href="https://instagr.am/hlqviet/" target="_blank">
               Instagram
-            </Link>. I like singing too so you may see me singing at a coffee
-            shop if I am in a good mood and, well, have the desire. So that is
-            pretty much about me.
+            </Link>.
           </p>
           <p>
-            Here are my presences on social networks if you want to connect with
-            me:
+            Ah. Let me introduce this little family member to you. His name is
+            Sữa (Milk). I adopted him in December 2018 when he was over three
+            months old.
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 499px)"
+                  srcset="/about/Sua-400.avif"
+                  type="image/avif"
+                />
+                <source
+                  media="(min-width: 500px)"
+                  srcset="/about/Sua-800.avif"
+                  type="image/avif"
+                />
+                <img
+                  alt="Sữa's photo"
+                  src="/about/Sua.webp"
+                  width="864"
+                  height="518"
+                />
+              </picture>
+              <figcaption class="text-center">Sữa's photo</figcaption>
+            </figure>
+          </p>
+          <p>
+            Alright. That is pretty much about me. If you want to connect with
+            me then check out my presences on social networks:
           </p>
           <ul>
             <li>
