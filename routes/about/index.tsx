@@ -70,15 +70,19 @@ const About = (props: PageProps) => {
             worked mostly with ASP.NET MVC, Entity Framework and jQuery. I was
             still a newbie at the time so I learned many things such as software
             development process, software development principles and practices.
+          </p>
+          <p>
             After working for a while, I became interested in the JavaScript
-            ecosystem. I took the role at{" "}
+            ecosystem. I took the Software Engineer role at{" "}
             <Link href="https://www.knorex.com/" target="_blank">KNOREX</Link>
             {" "}
             in 2018 and started with AngularJS and Node.js. That was also the
-            first time I worked with a template engine, Handlebars. During the
-            time I was working at the company, a super popular frontend library
-            came to my attention. Yes! You guessed it right. It was React. I
-            then made the decision to leave KNOREX and joined{" "}
+            first time I worked with a template engine, Handlebars.
+          </p>
+          <p>
+            During the time I was working at the company, a super popular
+            frontend library came to my attention. Yes! You guessed it right. It
+            was React. I then made the decision to leave KNOREX and joined{" "}
             <Link href="https://www.manabie.com/" target="_blank">
               Manabie
             </Link>{" "}
@@ -88,18 +92,19 @@ const About = (props: PageProps) => {
             lot and even had the opportunity to get involved in CI/CD with
             GitHub Actions and test automation with Cypress and Playwright. The
             opportunity to learn was not the only good thing I got there, I also
-            had cool teammates who were always willing to support me. It went
-            well until something happened on my side so I left the company and
-            came to{" "}
+            had cool teammates who were always willing to support me.
+          </p>
+          <p>
+            It went well until something happened on my side and I left the
+            company and came to{" "}
             <Link href="https://www.ninjavan.co/" target="_blank">
               Ninja Van
             </Link>{" "}
             in 2022. There I had the chance to work with Next.js, a React
             framework I had not worked with before. I was the first to get the
-            migration to TypeScript started and inspired team members to migrate
-            from JavaScript to TypeScript and contributed a lot of complex unit
-            tests to the team's codebase, which could serve as examples for
-            others.
+            migration to TypeScript started and inspired team members to follow.
+            Moreover, I contributed a lot of complex unit tests to the team's
+            codebase, which could serve as examples for others.
           </p>
           <p>
             Now let's leave those programming things aside. I am not such a
