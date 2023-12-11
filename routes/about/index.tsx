@@ -11,7 +11,6 @@ const About = (props: PageProps) => {
     <>
       <Head>
         <Metadata
-          canonical={url.href}
           description="A software engineer based in Ho Chi Minh City"
           og={{
             title: "Việt Huỳnh - About",
@@ -31,6 +30,7 @@ const About = (props: PageProps) => {
             },
           }}
           title="Việt Huỳnh - About"
+          url={url}
         />
       </Head>
       <Container>

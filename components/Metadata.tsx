@@ -3,10 +3,10 @@ import { VNode } from "preact";
 type OpenGraphMetadata = { [key: string]: string | OpenGraphMetadata };
 
 interface MetadataProps {
-  canonical: string;
   description: string;
   og: OpenGraphMetadata;
   title: string;
+  url: URL;
 }
 
 const generateOpenGraphMeta = (openGraphMetadata: OpenGraphMetadata) => {
@@ -38,11 +38,11 @@ const generateOpenGraphMeta = (openGraphMetadata: OpenGraphMetadata) => {
 };
 
 const Metadata = (props: MetadataProps) => {
-  const { canonical, description, og, title } = props;
+  const { description, og, title, url } = props;
 
   return (
     <>
-      <link rel="canonical" href={canonical} />
+      <link rel="canonical" href={url.origin + url.pathname} />
       <meta
         name="description"
         content={description}

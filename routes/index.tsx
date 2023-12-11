@@ -86,7 +86,6 @@ const Home = (props: PageProps) => {
     <>
       <Head>
         <Metadata
-          canonical={url.origin}
           description="A software engineer based in Ho Chi Minh City"
           og={{
             title: "Việt Huỳnh - Portfolio",
@@ -106,6 +105,7 @@ const Home = (props: PageProps) => {
             },
           }}
           title="Việt Huỳnh - Portfolio"
+          url={url}
         />
       </Head>
       <Container class="flex flex-wrap justify-center">
