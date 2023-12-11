@@ -19,7 +19,7 @@ const Header = () => {
               <List.Item key={item.name}>
                 <Link
                   href={item.href}
-                  class="py-1 aria-[current='page']:font-semibold aria-[current='page']:text-sky-500 dark:aria-[current='page']:text-sky-400"
+                  class="py-1 aria-[current='page']:font-semibold aria-[current='page']:text-sky-600 dark:aria-[current='page']:text-sky-500"
                 >
                   {item.name}
                 </Link>
