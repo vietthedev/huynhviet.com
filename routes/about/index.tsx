@@ -195,6 +195,16 @@ const About = (props: PageProps) => {
                 voz.vn/u/salad.47367
               </Link>
             </li>
+            <li>
+              Telegram:{" "}
+              <Link
+                href="https://t.me/hlqviet"
+                target="_blank"
+                title="Telegram"
+              >
+                t.me/hlqviet
+              </Link>
+            </li>
           </ul>
         </article>
       </Container>
