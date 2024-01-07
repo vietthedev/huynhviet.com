@@ -9,7 +9,13 @@ import { NAV_ITEMS } from "@/lib/constants.ts";
 
 const menus: {
   title: string;
-  children: { name: string; href: string; icon?: VNode; title?: string }[];
+  children: {
+    name: string;
+    href: string;
+    icon?: VNode;
+    openNewTab?: boolean;
+    title?: string;
+  }[];
 }[] = [
   {
     title: "Navigation",
@@ -22,12 +28,14 @@ const menus: {
         name: "hlqviet",
         href: "https://github.com/hlqviet",
         icon: <IconBrandGithub />,
+        openNewTab: true,
         title: "GitHub",
       },
       {
         name: "viet-huynh",
         href: "https://www.linkedin.com/in/viet-huynh",
         icon: <IconBrandLinkedin />,
+        openNewTab: true,
         title: "LinkedIn",
       },
     ],
@@ -47,7 +55,7 @@ const Footer = () => {
                   <Link
                     href={child.href}
                     title={child.title}
-                    target="_blank"
+                    target={child.openNewTab ? "_blank" : undefined}
                   >
                     {child.icon
                       ? (
