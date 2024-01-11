@@ -34,7 +34,7 @@ const About = (props: PageProps) => {
         />
       </Head>
       <Container>
-        <article class="prose dark:prose-invert max-w-full">
+        <article class="prose max-w-full">
           <h1>More about me</h1>
           <p>
             Before I got into software development, I was excited about many

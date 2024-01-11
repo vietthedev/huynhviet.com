@@ -9,7 +9,7 @@ const Hamburger = (props: HamburgerProps) => {
 
   return (
     <label
-      class="lg:hidden relative z-40 cursor-pointer px-3 py-6 [&_svg]:z-50 [&_svg]:relative"
+      class="md:hidden relative z-40 cursor-pointer px-3 py-6 [&_svg]:z-50 [&_svg]:relative"
       for="mobile-menu"
     >
       <input class="peer hidden" type="checkbox" id="mobile-menu" />
@@ -56,8 +56,8 @@ const Hamburger = (props: HamburgerProps) => {
       <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">
         &nbsp;
       </div>
-      <div class="fixed top-0 left-0 z-50 h-full w-full -translate-x-full overflow-y-auto overscroll-y-none transition duration-500 motion-reduce:transition-none peer-checked:translate-x-0">
-        <div class="float-left min-h-full w-4/5 md:w-3/5 bg-white dark:bg-slate-900 px-6 pt-12 shadow-2xl">
+      <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 motion-reduce:transition-none peer-checked:translate-x-0">
+        <div class="float-right min-h-full w-4/5 bg-[var(--fallback-b1,oklch(var(--b1)/1))] px-6 pt-12 shadow-2xl">
           {children}
         </div>
       </div>
