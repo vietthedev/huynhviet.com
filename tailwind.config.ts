@@ -1,4 +1,5 @@
 import { type Config } from "tailwindcss";
+import daisyui from "daisyui";
 import typography from "@tailwindcss/typography";
 
 export default {
@@ -6,6 +7,7 @@ export default {
     "{routes,islands,components}/**/*.{ts,tsx}",
   ],
   plugins: [
+    daisyui,
     typography(),
   ],
 } as Config;
