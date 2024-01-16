@@ -56,54 +56,25 @@ const About = (props: PageProps) => {
           </p>
           <p>
             I decided to pursue Software Engineering in university afterward. I
-            thought I would go with PHP but I ended up going the Microsoft way:
-            C# and .NET Framework because those were what I was most familiar
-            with after graduation.
+            thought I would go with PHP but I ended up going with the Microsoft
+            stack where I would work with C# and .NET Framework because those
+            were what I was most familiar with after graduation.
           </p>
           <p>
-            So I began my career at{" "}
-            <Link href="https://www.nashtechglobal.com/" target="_blank">
-              NashTech
-            </Link>{" "}
-            (formerly Harvey Nash) in 2015. I was a full-stack engineer and
-            worked mostly with ASP.NET MVC, Entity Framework and jQuery. I was
-            still a newbie at the time so I learned many things such as software
-            development process, software development principles and practices.
+            So I began my career as a full-stack engineer by joining a fresher
+            program in 2015. That was my first time to work on a real world
+            project in a team of many newly graduated engineers. I worked mostly
+            with ASP.NET MVC, Entity Framework and jQuery. Those software
+            development life cycle, software development principles and
+            practices were all new to me.
           </p>
           <p>
-            After working for a while, I became interested in the JavaScript
-            ecosystem. I took the Software Engineer role at{" "}
-            <Link href="https://www.knorex.com/" target="_blank">KNOREX</Link>
-            {" "}
-            in 2018 and started with AngularJS and Node.js. That was also the
-            first time I worked with a template engine, Handlebars.
-          </p>
-          <p>
-            During the time I was working at the company, a super popular
-            frontend library came to my attention. Yes! You guessed it right. It
-            was React. I then made the decision to leave KNOREX and joined{" "}
-            <Link href="https://www.manabie.com/" target="_blank">
-              Manabie
-            </Link>{" "}
-            in 2021. Here is where I began to work as a front-end engineer. The
-            technical stack at the company was almost new to me, from
-            TypeScript, React, GraphQL, gRPC to unit testing. I could learn a
-            lot and even had the opportunity to get involved in CI/CD with
-            GitHub Actions and test automation with Cypress and Playwright. The
-            opportunity to learn was not the only good thing I got there, I also
-            had cool teammates who were always willing to support me.
-          </p>
-          <p>
-            It went well until something happened on my side and I left the
-            company and came to{" "}
-            <Link href="https://www.ninjavan.co/" target="_blank">
-              Ninja Van
-            </Link>{" "}
-            in 2022. There I had the chance to work with Next.js, a React
-            framework I had not worked with before. I was the first to get the
-            migration to TypeScript started and inspired team members to follow.
-            Moreover, I contributed a lot of complex unit tests to the team's
-            codebase, which could serve as examples for others.
+            After quite some time, I became interested in the JavaScript
+            ecosystem and started with AngularJS and Node.js. But it didn't last
+            long as I couldn't resist new technologies. I decided to learn React
+            and started my new journey as a front end engineer. I had the
+            opportunity to work with other exciting technologies - TypeScript,
+            Next.js, GraphQL, gRPC, Cypress, Playwright, just to name a few.
           </p>
           <p>
             Now let's leave those programming things aside. I am not such a
