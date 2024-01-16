@@ -1,10 +1,10 @@
 ---
 title: The Beginning of a Journey
 published_at: 2015-11-08T11:10:00.000Z
-excerpt: |
-So I have survived the past 3 months taking various kinds of challenges from Harvey Nash Fresher Program to become a... Nasher (they use this word :p) - part of the Harvey Nash family.
+excerpt: |-
+  So I have survived the past 3 months taking various kinds of challenges from Harvey Nash Fresher Program to become a... Nasher (they use this word :p) - part of the Harvey Nash family.
 
-It all started with a phone call from...
+  It all started with a phone call from...
 private: false
 ---
 
