@@ -98,7 +98,7 @@ const Home = (props: PageProps) => {
             },
             url: url.origin,
             image: {
-              url: `${url.origin}/profile-picture.webp`,
+              url: `${url.origin}/assets/images/profile-picture.webp`,
               width: "800",
               height: "800",
               type: "image/webp",
@@ -115,18 +115,18 @@ const Home = (props: PageProps) => {
             <picture>
               <source
                 media="(max-width: 499px)"
-                srcset="/profile-picture-400.avif"
+                srcset="/assets/images/profile-picture-400.avif"
                 type="image/avif"
               />
               <source
                 media="(min-width: 500px)"
-                srcset="/profile-picture-800.avif"
+                srcset="/assets/images/profile-picture-800.avif"
                 type="image/avif"
               />
               <img
                 class="rounded-full"
                 alt="Việt Huỳnh's profile picture"
-                src="/profile-picture.webp"
+                src="/assets/images/profile-picture.webp"
                 width="800"
                 height="800"
               />

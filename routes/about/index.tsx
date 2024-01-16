@@ -23,7 +23,7 @@ const About = (props: PageProps) => {
             },
             url: url.href,
             image: {
-              url: `${url.origin}/profile-picture.webp`,
+              url: `${url.origin}/assets/images/profile-picture.webp`,
               width: "800",
               height: "800",
               type: "image/webp",
@@ -103,17 +103,17 @@ const About = (props: PageProps) => {
               <picture>
                 <source
                   media="(max-width: 499px)"
-                  srcset="/about/Sua-400.avif"
+                  srcset="/assets/images/about/Sua-400.avif"
                   type="image/avif"
                 />
                 <source
                   media="(min-width: 500px)"
-                  srcset="/about/Sua-800.avif"
+                  srcset="/assets/images/about/Sua-800.avif"
                   type="image/avif"
                 />
                 <img
                   alt="Sữa's photo"
-                  src="/about/Sua.webp"
+                  src="/assets/images/about/Sua.webp"
                   width="864"
                   height="518"
                 />
