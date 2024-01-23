@@ -1,5 +1,4 @@
 import { PageProps } from "$fresh/server.ts";
-import { Partial } from "$fresh/runtime.ts";
 
 const App = (props: PageProps) => {
   const { Component } = props;
@@ -33,9 +32,7 @@ const App = (props: PageProps) => {
         class="min-h-screen grid grid-rows-[auto_1fr_auto] antialiased transition motion-reduce:transition-none"
         f-client-nav
       >
-        <Partial name="body">
-          <Component />
-        </Partial>
+        <Component />
       </body>
     </html>
   );
