@@ -1,5 +1,5 @@
-import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-github.tsx";
-import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-linkedin.tsx";
+import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
+import IconBrandLinkedin from "tabler_icons_tsx/brand-linkedin.tsx";
 import { VNode } from "preact";
 import Link from "@/components/Link.tsx";
 import Title from "@/components/Typography/Title.tsx";

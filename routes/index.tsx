@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
-import IconBrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-linkedin.tsx";
-import IconMail from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/mail.tsx";
+import IconBrandLinkedin from "tabler_icons_tsx/brand-linkedin.tsx";
+import IconMail from "tabler_icons_tsx/mail.tsx";
 import Card from "@/components/Card.tsx";
 import Tag from "@/components/Tag.tsx";
 import Link from "@/components/Link.tsx";
