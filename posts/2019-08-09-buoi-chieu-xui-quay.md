@@ -1,6 +1,6 @@
 ---
 title: Buổi chiều xúi quẩy
-published_at: 2019-08-08T19:19:00.000Z
+publishedAt: 2019-08-08T19:19:00.000Z
 excerpt: 'Như thường lệ, sau giờ làm mình chờ hết mưa rồi cắp đít đi về. Đi được một đoạn thì nghe tiếng tít tít quen thuộc, nhìn xuống con xe thì đúng là tiếng kêu của chiếc SmartKey. Những tưởng đây chỉ là hiện tượng nhiễu sóng bình thường, nhưng không, không bình thường chút nào các bạn ạ. Tiếng tít tít quen thuộc bỗng trở nên kỳ lạ khi nó vang lên một cách liên tục. Bụng thầm nghĩ: "Thôi đệt, chuyến này lành ít dữ nhiều rồi."'
 private: false
 ---
