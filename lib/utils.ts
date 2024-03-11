@@ -4,7 +4,7 @@ import { Post } from "@/lib/types.ts";
 
 const POST_DIRECTORY = join(Deno.cwd(), "posts");
 
-export const getPosts = async (): Promise<Post[]> => {
+export const getPosts = async (includesPrivate = false): Promise<Post[]> => {
   const files = Deno.readDir(POST_DIRECTORY);
   const promises = [];
 
@@ -13,7 +13,11 @@ export const getPosts = async (): Promise<Post[]> => {
     promises.push(getPost(slug));
   }
 
-  const posts = await Promise.all(promises) as Post[];
+  let posts = await Promise.all(promises) as Post[];
+
+  if (!includesPrivate) {
+    posts = posts.filter((post) => !post.private);
+  }
 
   return posts.toSorted((a, b) =>
     b.publishedAt.getTime() - a.publishedAt.getTime()
