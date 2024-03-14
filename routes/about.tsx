@@ -33,9 +33,8 @@ const About = (props: PageProps) => {
           url={url}
         />
       </Head>
-      <Container>
+      <Container title="More about me">
         <article class="prose max-w-full">
-          <h1>More about me</h1>
           <p>
             Before I got into software development, I was excited about many
             things around a computer in my high school, from hardware to

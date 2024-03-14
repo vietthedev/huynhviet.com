@@ -108,8 +108,7 @@ const Home = (props: PageProps) => {
           url={url}
         />
       </Head>
-      <Container class="flex flex-wrap justify-center">
-        <Title>About Me</Title>
+      <Container title="Portfolio">
         <section class="mb-8 w-full flex flex-col md:flex-row justify-center items-center md:gap-4">
           <div class="max-w-[20rem]">
             <picture>
