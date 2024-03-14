@@ -13,35 +13,35 @@ Sống chung một nhà trong thời gian dài như thế, nó không chỉ là 
 nữa mà là thành viên gia đình. Cả nhà ăn, ngủ, nghỉ, chơi, đều ít khi thiếu sự
 hiện diện của nó.
 
-![Ăn với mèo](/assets/images/blog/an-voi-meo.jpg) _Ăn_
+[![Ăn với mèo](/assets/images/blog/an-voi-meo.jpg)](/assets/images/blog/an-voi-meo.jpg "Ăn với mèo")
 
-![Mèo ngủ](/assets/images/blog/meo-ngu.jpg) _Ngủ_
+[![Mèo ngủ](/assets/images/blog/meo-ngu.jpg)](/assets/images/blog/meo-ngu.jpg "Mèo ngủ")
 
-![Mèo ngủ](/assets/images/blog/meo-ngu-2.jpg) _Ngủ_
+[![Mèo ngủ](/assets/images/blog/meo-ngu-2.jpg)](/assets/images/blog/meo-ngu-2.jpg "Mèo ngủ")
 
-![Nghỉ với mèo](/assets/images/blog/nghi-voi-meo.jpg) _Nghỉ_
+[![Nghỉ với mèo](/assets/images/blog/nghi-voi-meo.jpg)](/assets/images/blog/nghi-voi-meo.jpg "Nghỉ với mèo")
 
-![Chơi với mèo](/assets/images/blog/choi-voi-meo.jpg) _Chơi_
+[![Chơi với mèo](/assets/images/blog/choi-voi-meo.jpg)](/assets/images/blog/choi-voi-meo.jpg "Chơi với mèo")
 
-![Làm việc với mèo](/assets/images/blog/lam-viec-voi-meo.jpg) _Làm việc_
+[![Làm việc với mèo](/assets/images/blog/lam-viec-voi-meo.jpg)](/assets/images/blog/lam-viec-voi-meo.jpg "Làm việc với mèo")
 
 Ban đầu nhà mình nuôi nó với mục đích giải quyết lũ chuột lộng hành. Nhưng rồi
 sau này khi lũ chuột đã bị đàn áp thì công dụng của nó chỉ còn để vuốt ve và
 cung phụng. Lâu lâu tóm được chuột nhắt lại đem ra khoe khoang rồi vờn như thể
 mình rất quyền năng. Có khi nó còn chẳng thèm bắt.
 
-![Mèo vờn chuột](/assets/images/blog/meo-von-chuot.mp4)
+<video title="Mèo vờn chuột" src="/assets/images/blog/meo-von-chuot.mp4" controls playsinline></video>
 
 Cả nhà có dịp đi du lịch thì lại phải nhờ người khác trông nó, cho nó ăn.
 
 À mà nó còn có công dụng làm trò vui nữa, đôi khi lại làm ra vẻ đáng yêu hòng
 chứng tỏ mình còn vai trò trong nhà.
 
-![Mèo ngủ](/assets/images/blog/meo-ngu-2.jpg)
+[![Mèo ngủ](/assets/images/blog/meo-ngu-2.jpg)](/assets/images/blog/meo-ngu-2.jpg "Mèo ngủ")
 
-![Mèo ngủ](/assets/images/blog/meo-ngu-3.jpg)
+[![Mèo ngủ](/assets/images/blog/meo-ngu-3.jpg)](/assets/images/blog/meo-ngu-3.jpg "Mèo ngủ")
 
-![Mèo lên cầu thang](/assets/images/blog/meo-len-cau-thang.mp4)
+<video title="Mèo leo câu thang" src="/assets/images/blog/meo-len-cau-thang.mp4" controls playsinline></video>
 
 Con này được cái nhát hít. Đem ra tới cửa chưa ra ngoài sân là chống cự quyết
 liệt. Giỏi lắm chỉ bẽn lẽn bò ra ngoài buổi tối khi vắng người và có chủ. Không

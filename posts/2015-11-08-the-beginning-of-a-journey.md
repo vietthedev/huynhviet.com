@@ -79,7 +79,7 @@ the work, the environment to the people. However, we got to know each other
 rather quickly and became friends. Yup! I can call them friends. We learned, we
 worked, we had meals and hung out together.
 
-![Harvey Nash Fresher team](/assets/images/blog/harvey-nash-fresher-team.jpg)
+[![Harvey Nash Fresher team](/assets/images/blog/harvey-nash-fresher-team.jpg)](/assets/images/blog/harvey-nash-fresher-team.jpg "Harvey Nash Fresher team")
 _Everyone in the team_
 
 It was our luck to join the program when there was about to be a company trip.
@@ -89,7 +89,7 @@ for the Board of Assessment. I was one of the speakers at the second one. Guess
 what? I was praised for my English pronunciation and fluency ^o^. I was soooo
 glad.
 
-![Harvey Nash Fresher team at The Grand Ho Tram Strip](/assets/images/blog/harvey-nash-fresher-team-at-the-grand-ho-tram-strip.jpg)
+[![Harvey Nash Fresher team at The Grand Ho Tram Strip](/assets/images/blog/harvey-nash-fresher-team-at-the-grand-ho-tram-strip.jpg)](/assets/images/blog/harvey-nash-fresher-team-at-the-grand-ho-tram-strip.jpg "Harvey Nash Fresher team at The Grand Ho Tram Strip")
 _Part of the team at The Grand Ho Tram Strip_
 
 We then overcame the challenges and graduated from the program together on
