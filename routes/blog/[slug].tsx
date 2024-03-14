@@ -1,18 +1,18 @@
+import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { render } from "$gfm";
-import { Head } from "$fresh/runtime.ts";
+import { handler as postHandler } from "@/routes/api/posts/[slug].ts";
 import { Post } from "@/lib/types.ts";
 import Container from "@/components/Container.tsx";
 
-export const handler: Handlers = {
-  async GET(_req, ctx) {
-    const response = await fetch(
-      `${ctx.url.origin}/api/posts/${ctx.params.slug}`,
-    );
+export const handler: Handlers<Post> = {
+  async GET(req, ctx) {
+    const { GET: getPost } = postHandler;
+    const response = await getPost!(req, ctx);
 
     if (!response.ok) return ctx.renderNotFound();
 
-    const post = await response.json() as Post;
+    const post = await response.json();
 
     return ctx.render(post);
   },

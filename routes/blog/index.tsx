@@ -1,13 +1,15 @@
 import { Head } from "$fresh/runtime.ts";
-import Container from "@/components/Container.tsx";
 import { Handlers, PageProps } from "$fresh/server.ts";
+import { handler as postsHandler } from "@/routes/api/posts/index.ts";
+import Container from "@/components/Container.tsx";
 import { Post } from "@/lib/types.ts";
 import PostCard from "@/components/PostCard.tsx";
 
-export const handler: Handlers = {
-  async GET(_req, ctx) {
-    const response = await fetch(`${ctx.url.origin}/api/posts`);
-    const posts = await response.json() as Post[];
+export const handler: Handlers<Post[]> = {
+  async GET(req, ctx) {
+    const { GET: getPosts } = postsHandler;
+    const response = await getPosts!(req, ctx);
+    const posts = await response.json();
 
     return ctx.render(posts);
   },

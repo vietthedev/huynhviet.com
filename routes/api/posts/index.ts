@@ -1,7 +1,8 @@
 import { Handlers } from "$fresh/server.ts";
 import { getPosts } from "@/lib/utils.ts";
+import { Post } from "@/lib/types.ts";
 
-export const handler: Handlers = {
+export const handler: Handlers<Post[]> = {
   async GET() {
     const posts = await getPosts();
 
