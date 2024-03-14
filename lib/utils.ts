@@ -6,14 +6,15 @@ const POST_DIRECTORY = join(Deno.cwd(), "posts");
 
 export const getPosts = async (includesPrivate = false): Promise<Post[]> => {
   const files = Deno.readDir(POST_DIRECTORY);
-  const promises = [];
+  const promises: Promise<Post>[] = [];
 
   for await (const file of files) {
     const slug = file.name.replace(".md", "");
-    promises.push(getPost(slug));
+
+    promises.push(getPost(slug) as Promise<Post>);
   }
 
-  let posts = await Promise.all(promises) as Post[];
+  let posts = await Promise.all(promises);
 
   if (!includesPrivate) {
     posts = posts.filter((post) => !post.private);
