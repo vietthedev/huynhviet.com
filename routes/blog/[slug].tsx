@@ -20,14 +20,24 @@ export const handler: Handlers = {
 
 const PostPage = (props: PageProps<Post>) => {
   const { data } = props;
-  const { content, title } = data;
+  const { content, publishedAt, title } = data;
 
   return (
-    <Container title={title}>
+    <Container title="Blog">
       <Head>
         <title>{title} - Việt Huỳnh - Blog</title>
       </Head>
       <article class="max-w-full prose">
+        <h2 class="text-3xl mb-0">{title}</h2>
+        <time class="italic text-gray-500">
+          {new Date(publishedAt).toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+          })}
+        </time>
         <div dangerouslySetInnerHTML={{ __html: render(content) }} />
       </article>
     </Container>

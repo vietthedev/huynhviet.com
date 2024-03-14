@@ -1,6 +1,5 @@
 import { Post } from "@/lib/types.ts";
 import Link from "@/components/Link.tsx";
-import Paragraph from "@/components/Typography/Paragraph.tsx";
 
 const PostCard = (props: Post) => {
   const { excerpt, publishedAt, slug, title } = props;
@@ -17,14 +16,18 @@ const PostCard = (props: Post) => {
           year: "numeric",
           month: "long",
           day: "numeric",
+          hour: "numeric",
+          minute: "2-digit",
         })}
       </time>
-      <Paragraph>
-        {excerpt}
-      </Paragraph>
-      <Paragraph>
-        <Link href={`/blog/${slug}`}>Read more</Link>
-      </Paragraph>
+      <div class="mt-4 max-w-full prose">
+        <p>
+          {excerpt}
+        </p>
+        <p>
+          <Link href={`/blog/${slug}`}>Read more</Link>
+        </p>
+      </div>
     </article>
   );
 };
