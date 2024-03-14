@@ -23,7 +23,7 @@ const PostPage = (props: PageProps<Post>) => {
   const { content, publishedAt, title } = data;
 
   return (
-    <Container title="Blog">
+    <Container>
       <Head>
         <title>{title} - Việt Huỳnh - Blog</title>
       </Head>
