@@ -1,8 +1,7 @@
 import { extract } from "$std/front_matter/yaml.ts";
 import { join } from "$std/path/posix/mod.ts";
 import { Post } from "@/lib/types.ts";
-
-const POST_DIRECTORY = "./posts";
+import { POST_DIRECTORY } from "@/lib/constants.ts";
 
 export const getPosts = async (includesPrivate = false): Promise<Post[]> => {
   const files = Deno.readDir(POST_DIRECTORY);
