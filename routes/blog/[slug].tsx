@@ -4,6 +4,7 @@ import { render } from "$gfm";
 import { handler as postHandler } from "@/routes/api/posts/[slug].ts";
 import { Post } from "@/lib/types.ts";
 import Container from "@/components/Container.tsx";
+import Metadata from "@/components/Metadata.tsx";
 
 export const handler: Handlers<Post> = {
   async GET(req, ctx) {
@@ -19,12 +20,27 @@ export const handler: Handlers<Post> = {
 };
 
 const PostPage = (props: PageProps<Post>) => {
-  const { data } = props;
-  const { content, publishedAt, title } = data;
+  const { data, url } = props;
+  const { content, excerpt, publishedAt, title } = data;
 
   return (
     <Container>
       <Head>
+        <Metadata
+          description={excerpt}
+          og={{
+            title,
+            description: excerpt,
+            type: "article",
+            article: {
+              published_time: publishedAt.toISOString(),
+              author: "Việt Huỳnh",
+            },
+            url: url.origin,
+          }}
+          title={`${title} - Việt Huỳnh - Blog`}
+          url={url}
+        />
         <title>{title} - Việt Huỳnh - Blog</title>
       </Head>
       <article class="max-w-full prose">

@@ -4,6 +4,7 @@ import { handler as postsHandler } from "@/routes/api/posts/index.ts";
 import Container from "@/components/Container.tsx";
 import { Post } from "@/lib/types.ts";
 import PostCard from "@/components/PostCard.tsx";
+import Metadata from "@/components/Metadata.tsx";
 
 export const handler: Handlers<Post[]> = {
   async GET(req, ctx) {
@@ -16,11 +17,22 @@ export const handler: Handlers<Post[]> = {
 };
 
 const Blog = (props: PageProps<Post[]>) => {
-  const { data } = props;
+  const { data, url } = props;
 
   return (
     <Container title="Blog">
       <Head>
+        <Metadata
+          description="Blog posts"
+          og={{
+            title: "Việt Huỳnh - Blog",
+            description: "Blog posts",
+            type: "website",
+            url: url.origin,
+          }}
+          title="Việt Huỳnh - Blog"
+          url={url}
+        />
         <title>Việt Huỳnh - Blog</title>
       </Head>
       <section class="flex flex-col gap-y-16 [&>article:not(:last-child)]:border-b">
