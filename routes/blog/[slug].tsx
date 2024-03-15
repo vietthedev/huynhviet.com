@@ -36,7 +36,7 @@ const PostPage = (props: PageProps<Post>) => {
               published_time: new Date(publishedAt).toISOString(),
               author: "Việt Huỳnh",
             },
-            url: url.origin,
+            url: url.origin + url.pathname,
           }}
           title={`${title} - Việt Huỳnh - Blog`}
           url={url}

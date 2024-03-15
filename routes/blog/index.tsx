@@ -28,7 +28,7 @@ const Blog = (props: PageProps<Post[]>) => {
             title: "Việt Huỳnh - Blog",
             description: "Blog posts",
             type: "website",
-            url: url.origin,
+            url: url.origin + url.pathname,
           }}
           title="Việt Huỳnh - Blog"
           url={url}
