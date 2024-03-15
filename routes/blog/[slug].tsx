@@ -33,7 +33,7 @@ const PostPage = (props: PageProps<Post>) => {
             description: excerpt,
             type: "article",
             article: {
-              published_time: publishedAt.toISOString(),
+              published_time: new Date(publishedAt).toISOString(),
               author: "Việt Huỳnh",
             },
             url: url.origin,
