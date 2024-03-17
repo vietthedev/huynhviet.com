@@ -11,7 +11,7 @@ const Container = (props: ContainerProps) => {
 
   return (
     <div class={`px-4 py-8 max-w-4xl mx-auto ${props.class ?? ""}`}>
-      {title && <Title class="!text-5xl !mb-12">{title}</Title>}
+      {title && <h2 class="text-3xl mb-8 font-bold">{title}</h2>}
       <div>
         {children}
       </div>

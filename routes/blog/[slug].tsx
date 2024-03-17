@@ -44,7 +44,7 @@ const PostPage = (props: PageProps<Post>) => {
         <title>{title} - Việt Huỳnh - Blog</title>
       </Head>
       <article class="max-w-full prose">
-        <h3 class="text-3xl mb-0">{title}</h3>
+        <h3 class="text-2xl mb-0">{title}</h3>
         <time class="italic text-gray-500">
           {new Date(publishedAt).toLocaleDateString(undefined, {
             year: "numeric",
