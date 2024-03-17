@@ -24,7 +24,7 @@ const PostPage = (props: PageProps<Post>) => {
   const { content, excerpt, publishedAt, title } = data;
 
   return (
-    <Container>
+    <Container title="Blog">
       <Head>
         <Metadata
           description={excerpt}
@@ -44,7 +44,7 @@ const PostPage = (props: PageProps<Post>) => {
         <title>{title} - Việt Huỳnh - Blog</title>
       </Head>
       <article class="max-w-full prose">
-        <h2 class="text-3xl mb-0">{title}</h2>
+        <h3 class="text-3xl mb-0">{title}</h3>
         <time class="italic text-gray-500">
           {new Date(publishedAt).toLocaleDateString(undefined, {
             year: "numeric",

@@ -5,9 +5,9 @@ const PostCard = (props: Post) => {
   const { excerpt, publishedAt, slug, title } = props;
 
   return (
-    <article class="pb-4 w-full flex flex-col">
+    <article class="pb-4">
       <Link href={`/blog/${slug}`}>
-        <h3 class="text-3xl font-bold">
+        <h3 class="text-3xl font-semibold">
           {title}
         </h3>
       </Link>
