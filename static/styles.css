@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .active-link {
+    @apply font-semibold text-sky-700 dark:text-sky-500
+  }
+}

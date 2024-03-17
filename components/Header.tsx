@@ -13,7 +13,9 @@ const Header = () => {
               <List.Item key={item.name}>
                 <Link
                   href={item.href}
-                  class="py-1 aria-[current='page']:font-semibold aria-[current='page']:text-sky-700 dark:aria-[current='page']:text-sky-500"
+                  class={`py-1 aria-[current='page']:active-link ${
+                    item.exact ? "" : "aria-[current='true']:active-link"
+                  }`}
                 >
                   {item.name}
                 </Link>
@@ -26,7 +28,9 @@ const Header = () => {
             <List.Item key={item.name} class="!ml-0 !mt-0">
               <Link
                 href={item.href}
-                class="py-1 aria-[current='page']:font-semibold aria-[current='page']:text-sky-700 dark:aria-[current='page']:text-sky-500"
+                class={`py-1 aria-[current='page']:active-link ${
+                  item.exact ? "" : "aria-[current='true']:active-link"
+                }`}
               >
                 {item.name}
               </Link>
