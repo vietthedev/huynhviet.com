@@ -3,17 +3,14 @@ import { join } from "$std/path/posix/mod.ts";
 import { Post } from "@/lib/types.ts";
 import { POST_DIRECTORY } from "@/lib/constants.ts";
 
+export const getFiles = (directory: string) =>
+  Array.fromAsync(Deno.readDir(directory));
+
 export const getPosts = async (includesPrivate = false): Promise<Post[]> => {
-  const files = Deno.readDir(POST_DIRECTORY);
-  const promises: Promise<Post>[] = [];
-
-  for await (const file of files) {
-    const slug = file.name.replace(".md", "");
-
-    promises.push(getPost(slug) as Promise<Post>);
-  }
-
-  let posts = await Promise.all(promises);
+  const promises = (await getFiles(POST_DIRECTORY)).map((file) =>
+    getPost(file.name.replace(".md", ""))
+  );
+  let posts = await Promise.all(promises) as Post[];
 
   if (!includesPrivate) {
     posts = posts.filter((post) => !post.private);
