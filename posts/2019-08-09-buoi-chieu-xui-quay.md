@@ -38,23 +38,23 @@ phẩm hao mòn thì mua lắm làm gì. Thế là đành chịu, cũng không c
 
 Rồi bây giờ chẳng lẽ đứng đây tắm mưa? Mình đảo mắt sang bên kia đường. Ô kìa!
 Không phải quán nhậu như từ đầu giờ mình vẫn tưởng, mà là Bò Né 3 Ngon. Dắt xe
-sang đường thôi drooling. Vào quán mình gọi ngay bò số 3 vì đã khá quen với thực
-đơn của 3 Ngon. Đến lúc phần ăn được mang ra thì mắt tròn mắt dẹt. Trứng của tôi
-đâu? Pa tê của tôi đâu? Còn cả xúc xích nữa. Sao chỉ toàn thịt bò thế này o_O?
-Chẳng lẽ 3 Ngon này không phải là 3 Ngon mà mình đã từng ăn trước đó? Thôi thì
-cũng kệ, xơi đã.
+sang đường thôi. Vào quán mình gọi ngay bò số 3 vì đã khá quen với thực đơn của
+3 Ngon. Đến lúc phần ăn được mang ra thì mắt tròn mắt dẹt. Trứng của tôi đâu? Pa
+tê của tôi đâu? Còn cả xúc xích nữa. Sao chỉ toàn thịt bò thế này o_O? Chẳng lẽ
+3 Ngon này không phải là 3 Ngon mà mình đã từng ăn trước đó? Thôi thì cũng kệ,
+xơi đã.
 
 Dùng bữa xong được chốc lát thì pin cũng giao tới. May mắn thay lúc đấy tự dưng
 remote lên sóng một tí nên mình mở được cốp xe lấy tua vít. Nhưng oh shit! Đây
-là tua vít hoa thị, làm sao mở được cái remote củ *** này frustrated. Thế là
-đành nhờ bạn nhân viên lấy dao mở hộ cho. Hí hửng bóc viên pin ra thì lại gặp
-phải bọc nhựa cứng bảo vệ. Thôi lại đành nhờ bạn nhân viên.
+là tua vít hoa thị, làm sao mở được cái remote củ *** này. Thế là đành nhờ bạn
+nhân viên lấy dao mở hộ cho. Hí hửng bóc viên pin ra thì lại gặp phải bọc nhựa
+cứng bảo vệ. Thôi lại đành nhờ bạn nhân viên.
 
 Cạch! Cạch! Cường độ sáng đèn báo hiệu trên chiếc remote trở lại bình thường.
 Tuyệt cú mèo! Về thôi.
 
 Về đến nhà mình vẫn thắc mắc về phần bò nên thử tìm lại hai quán đã từng ăn thì
-mới vỡ lẽ ra là thực đơn khác nhau về số hypnotized
+mới vỡ lẽ ra là thực đơn khác nhau về số.
 
 Buổi chiều như !_%28&_!#_%^
 
