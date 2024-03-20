@@ -13,51 +13,13 @@ const Hamburger = (props: HamburgerProps) => {
       for="mobile-menu"
     >
       <input class="peer hidden" type="checkbox" id="mobile-menu" />
-      <svg
-        class="peer-checked:hidden fill-none stroke-current stroke-[1.2px]"
-        width="21"
-        height="14"
-        viewBox="0 0 21 14"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          x1="0.25"
-          y1="1.4"
-          x2="20.25"
-          y2="1.4"
-        >
-        </line>
-        <line
-          x1="0.25"
-          y1="7.4"
-          x2="20.25"
-          y2="7.4"
-        >
-        </line>
-        <line
-          x1="0.25"
-          y1="13.4"
-          x2="10.25"
-          y2="13.4"
-        >
-        </line>
-      </svg>
-      <svg
-        class="h-6 w-6 hidden peer-checked:block fill-none stroke-current stroke-2"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M6 18L18 6M6 6l12 12"
-        >
-        </path>
-      </svg>
+      <div class="relative z-50 block h-[1px] w-7 bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-[var(--fallback-bc,oklch(var(--bc)/1))] before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-[var(--fallback-bc,oklch(var(--bc)/1))] after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform">
+      </div>
       <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">
         &nbsp;
       </div>
-      <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 motion-reduce:transition-none peer-checked:translate-x-0">
-        <div class="float-right min-h-full w-4/5 bg-[var(--fallback-b1,oklch(var(--b1)/1))] px-6 pt-12 shadow-2xl">
+      <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
+        <div class="float-right min-h-full w-[85%] bg-[var(--fallback-b1,oklch(var(--b1)/1))] px-6 pt-12 shadow-2xl">
           {children}
         </div>
       </div>
