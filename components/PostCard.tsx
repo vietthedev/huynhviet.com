@@ -7,11 +7,14 @@ const PostCard = (props: Post) => {
   return (
     <article class="pb-4">
       <Link href={`/blog/${slug}`}>
-        <h3 class="text-2xl font-semibold">
+        <h2 class="text-2xl font-semibold">
           {title}
-        </h3>
+        </h2>
       </Link>
-      <time class="italic text-gray-500">
+      <time
+        class="italic text-gray-500"
+        datetime={new Date(publishedAt).toISOString()}
+      >
         {new Date(publishedAt).toLocaleDateString(undefined, {
           year: "numeric",
           month: "long",
@@ -24,9 +27,7 @@ const PostCard = (props: Post) => {
         <p>
           {excerpt}
         </p>
-        <p>
-          <Link href={`/blog/${slug}`}>Read more</Link>
-        </p>
+        <Link href={`/blog/${slug}`}>Read more</Link>
       </div>
     </article>
   );
