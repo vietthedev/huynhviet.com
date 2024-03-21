@@ -53,10 +53,21 @@ const PostPage = (props: PageProps<Post>) => {
           {formatPostDate(publishedAt)}
         </time>
         <div
-          class="mt-4 border-t"
+          class="my-4 border-y"
           dangerouslySetInnerHTML={{ __html: render(content) }}
         />
       </article>
+      <script
+        src="https://utteranc.es/client.js"
+        // @ts-ignore Required for utterances
+        repo="hlqviet/huynhviet.com"
+        issue-term="pathname"
+        label="utterances"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async
+      >
+      </script>
     </Container>
   );
 };
