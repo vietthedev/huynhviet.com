@@ -102,4 +102,4 @@ stop my team from taking first place :p.
 Well, it's already late. This post is also already long. I guess it's time to
 have some rest.
 
-This morning, my journey will truly begins!
+This morning, my journey will truly begin!
