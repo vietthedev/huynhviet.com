@@ -1,5 +1,6 @@
 import { Post } from "@/lib/types.ts";
 import Link from "@/components/Link.tsx";
+import { formatPostDate } from "@/lib/utils.ts";
 
 const PostCard = (props: Post) => {
   const { excerpt, publishedAt, slug, title } = props;
@@ -15,13 +16,7 @@ const PostCard = (props: Post) => {
         class="italic text-gray-500"
         datetime={new Date(publishedAt).toISOString()}
       >
-        {new Date(publishedAt).toLocaleDateString(undefined, {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-          hour: "numeric",
-          minute: "2-digit",
-        })}
+        {formatPostDate(publishedAt)}
       </time>
       <div class="mt-4 max-w-full prose">
         <p>

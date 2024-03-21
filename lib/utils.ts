@@ -34,3 +34,9 @@ export const getPost = async (slug: string): Promise<Post | null> => {
     private: attrs.private,
   };
 };
+
+export const formatPostDate = (date: string | Date) =>
+  new Intl.DateTimeFormat("en-GB", {
+    dateStyle: "full",
+    timeStyle: "short",
+  }).format(new Date(date));

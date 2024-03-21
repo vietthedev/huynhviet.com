@@ -5,6 +5,7 @@ import { handler as postHandler } from "@/routes/api/posts/[slug].ts";
 import { Post } from "@/lib/types.ts";
 import Container from "@/components/Container.tsx";
 import Metadata from "@/components/Metadata.tsx";
+import { formatPostDate } from "@/lib/utils.ts";
 
 export const handler: Handlers<Post> = {
   async GET(req, ctx) {
@@ -49,13 +50,7 @@ const PostPage = (props: PageProps<Post>) => {
           class="italic text-gray-500"
           datetime={new Date(publishedAt).toISOString()}
         >
-          {new Date(publishedAt).toLocaleDateString(undefined, {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour: "numeric",
-            minute: "2-digit",
-          })}
+          {formatPostDate(publishedAt)}
         </time>
         <div
           class="mt-4 border-t"
