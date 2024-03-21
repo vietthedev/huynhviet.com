@@ -6,6 +6,7 @@ import { Post } from "@/lib/types.ts";
 import Container from "@/components/Container.tsx";
 import Metadata from "@/components/Metadata.tsx";
 import { formatPostDate } from "@/lib/utils.ts";
+import CommentWidget from "@/components/CommentWidget.tsx";
 
 export const handler: Handlers<Post> = {
   async GET(req, ctx) {
@@ -57,17 +58,7 @@ const PostPage = (props: PageProps<Post>) => {
           dangerouslySetInnerHTML={{ __html: render(content) }}
         />
       </article>
-      <script
-        src="https://utteranc.es/client.js"
-        // @ts-ignore Required for utterances
-        repo="hlqviet/huynhviet.com"
-        issue-term="pathname"
-        label="utterances"
-        theme="preferred-color-scheme"
-        crossorigin="anonymous"
-        async
-      >
-      </script>
+      <CommentWidget />
     </Container>
   );
 };
