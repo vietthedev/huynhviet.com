@@ -23,10 +23,10 @@ const Blog = (props: PageProps<Post[]>) => {
     <Container title="Blog">
       <Head>
         <Metadata
-          description="Blog posts"
+          description="A place where I tell my stories"
           og={{
             title: "Việt Huỳnh - Blog",
-            description: "Blog posts",
+            description: "A place where I tell my stories",
             type: "website",
             url: url.origin + url.pathname,
           }}
