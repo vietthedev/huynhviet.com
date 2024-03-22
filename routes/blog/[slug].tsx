@@ -16,8 +16,9 @@ export const handler: Handlers<Post> = {
 
     // const post = await response.json();
 
+    const url = new URL(req.url);
     const response = await fetch(
-      `${ctx.url.origin}/api/posts/${ctx.params.slug}`,
+      `${url.origin}/api/posts/${ctx.params.slug}`,
     );
     const post = await response.json();
     console.log(ctx.url.origin);
