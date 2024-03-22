@@ -12,7 +12,7 @@ import * as $api_posts_index from "./routes/api/posts/index.ts";
 import * as $blog_slug_ from "./routes/blog/[slug].tsx";
 import * as $blog_index from "./routes/blog/index.tsx";
 import * as $index from "./routes/index.tsx";
-
+import * as $GoBackButton from "./islands/GoBackButton.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -28,7 +28,9 @@ const manifest = {
     "./routes/blog/index.tsx": $blog_index,
     "./routes/index.tsx": $index,
   },
-  islands: {},
+  islands: {
+    "./islands/GoBackButton.tsx": $GoBackButton,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 
