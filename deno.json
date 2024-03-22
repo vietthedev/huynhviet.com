@@ -10,7 +10,7 @@
   "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "exclude": ["**/_fresh/*"],
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.6.7/",
+    "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "$gfm": "https://deno.land/x/gfm@0.6.0/mod.ts",
     "$std/": "https://deno.land/std@0.219.0/",
     "@/": "./",
