@@ -1,30 +1,22 @@
 import { Head } from "$fresh/runtime.ts";
-import { Handlers, PageProps } from "$fresh/server.ts";
+import { Handler, PageProps } from "$fresh/server.ts";
 import { render } from "$gfm";
+import { handler as getPost } from "@/routes/api/posts/[slug].ts";
 import { Post } from "@/lib/types.ts";
 import Container from "@/components/Container.tsx";
 import Metadata from "@/components/Metadata.tsx";
 import { formatPostDate } from "@/lib/utils.ts";
 import CommentWidget from "@/components/CommentWidget.tsx";
+import GoBackButton from "@/islands/GoBackButton.tsx";
 
-export const handler: Handlers<Post> = {
-  async GET(req, ctx) {
-    // const { GET: getPost } = postHandler;
-    // const response = await getPost!(req, ctx);
+export const handler: Handler<Post> = async (req, ctx) => {
+  const response = await getPost(req, ctx);
 
-    // if (!response.ok) return ctx.renderNotFound();
+  if (!response.ok) return ctx.renderNotFound();
 
-    // const post = await response.json();
+  const post = await response.json();
 
-    const url = new URL(req.url);
-    const response = await fetch(
-      `${url.origin}/api/posts/${ctx.params.slug}`,
-    );
-    const post = await response.json();
-    console.log(ctx.url.origin);
-
-    return ctx.render(post);
-  },
+  return ctx.render(post);
 };
 
 const PostPage = (props: PageProps<Post>) => {
@@ -63,6 +55,9 @@ const PostPage = (props: PageProps<Post>) => {
           class="my-4 border-y"
           dangerouslySetInnerHTML={{ __html: render(content) }}
         />
+        <section>
+          <GoBackButton />
+        </section>
         <CommentWidget />
       </article>
     </Container>

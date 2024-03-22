@@ -1,19 +1,16 @@
 import { Head } from "$fresh/runtime.ts";
-import { Handlers, PageProps } from "$fresh/server.ts";
-import { handler as postsHandler } from "@/routes/api/posts/index.ts";
+import { Handler, PageProps } from "$fresh/server.ts";
+import { handler as getPosts } from "@/routes/api/posts/index.ts";
 import Container from "@/components/Container.tsx";
 import { Post } from "@/lib/types.ts";
 import PostCard from "@/components/PostCard.tsx";
 import Metadata from "@/components/Metadata.tsx";
 
-export const handler: Handlers<Post[]> = {
-  async GET(req, ctx) {
-    const { GET: getPosts } = postsHandler;
-    const response = await getPosts!(req, ctx);
-    const posts = await response.json();
+export const handler: Handler<Post[]> = async (req, ctx) => {
+  const response = await getPosts(req, ctx);
+  const posts = await response.json();
 
-    return ctx.render(posts);
-  },
+  return ctx.render(posts);
 };
 
 const Blog = (props: PageProps<Post[]>) => {
