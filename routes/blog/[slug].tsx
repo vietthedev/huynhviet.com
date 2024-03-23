@@ -6,7 +6,7 @@ import { Post } from "@/lib/types.ts";
 import Container from "@/components/Container.tsx";
 import Metadata from "@/components/Metadata.tsx";
 import { formatPostDate } from "@/lib/utils.ts";
-import CommentWidget from "@/components/CommentWidget.tsx";
+import CommentWidget from "@/islands/CommentWidget.tsx";
 import Link from "@/components/Link.tsx";
 
 export const handler: Handler<Post> = async (req, ctx) => {
