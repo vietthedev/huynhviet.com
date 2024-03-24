@@ -8,7 +8,7 @@ const Layout = (props: PageProps) => {
   return (
     <>
       <Header />
-      <main>
+      <main class="px-4 py-8 max-w-4xl mx-auto">
         <Component />
       </main>
       <Footer />
