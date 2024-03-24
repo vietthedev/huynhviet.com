@@ -6,9 +6,9 @@ const PostCard = (props: Post) => {
   const { excerpt, publishedAt, slug, title } = props;
 
   return (
-    <article class="pb-4">
-      <Link href={`/blog/${slug}`}>
-        <h2 class="text-2xl font-semibold">
+    <article class="flex flex-col pb-4">
+      <Link class="w-fit" href={`/blog/${slug}`}>
+        <h2 class="w-fit text-2xl font-semibold">
           {title}
         </h2>
       </Link>
@@ -18,12 +18,12 @@ const PostCard = (props: Post) => {
       >
         {formatPostDate(publishedAt)}
       </time>
-      <div class="mt-4 max-w-full prose">
+      <section class="mt-4 max-w-full prose">
         <p>
           {excerpt}
         </p>
         <Link href={`/blog/${slug}`}>Read more</Link>
-      </div>
+      </section>
     </article>
   );
 };
