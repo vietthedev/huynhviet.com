@@ -22,17 +22,23 @@ export const getPosts = async (includesPrivate = false): Promise<Post[]> => {
 };
 
 export const getPost = async (slug: string): Promise<Post | null> => {
-  const text = await Deno.readTextFile(join(POST_DIRECTORY, `${slug}.md`));
-  const { attrs, body } = extract<Post>(text);
+  try {
+    const text = await Deno.readTextFile(join(POST_DIRECTORY, `${slug}.md`));
+    const { attrs, body } = extract<Post>(text);
 
-  return {
-    slug,
-    title: attrs.title,
-    publishedAt: new Date(attrs.publishedAt),
-    content: body,
-    excerpt: attrs.excerpt,
-    private: attrs.private,
-  };
+    return {
+      slug,
+      title: attrs.title,
+      publishedAt: new Date(attrs.publishedAt),
+      content: body,
+      excerpt: attrs.excerpt,
+      private: attrs.private,
+    };
+  } catch (err) {
+    if (err instanceof Deno.errors.NotFound) return null;
+
+    throw err;
+  }
 };
 
 export const formatPostDate = (date: string | Date) =>
