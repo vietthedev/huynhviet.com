@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: fjogeleit/http-request-action@v1
+      - uses: fjogeleit/http-request-action@0bd00a33db6f82063a3c6befd41f232f61d66583 # v1
         with:
           url: "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache"
           method: "POST"
