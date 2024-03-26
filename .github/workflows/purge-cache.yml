@@ -16,3 +16,4 @@ jobs:
           method: "POST"
           bearerToken: "${{ secrets.CLOUDFLARE_API_TOKEN }}"
           data: '{ "purge_everything": true }'
+          retry: 3
