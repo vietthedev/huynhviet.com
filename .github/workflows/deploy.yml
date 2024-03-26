@@ -34,5 +34,6 @@ jobs:
           entrypoint: "main.ts"
           root: ""
 
-      - name: Purge cache
-        uses: hlqviet/huynhviet.com/.github/workflows/purge-cache.yml@main
+  purge-cache:
+    needs: deploy
+    uses: ./.github/workflows/purge-cache.yml
