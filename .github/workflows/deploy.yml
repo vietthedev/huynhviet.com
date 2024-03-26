@@ -41,5 +41,6 @@ jobs:
 
   purge-cache:
     needs: deploy
+    name: Purge cache
     uses: ./.github/workflows/purge-cache.yml
     secrets: inherit
