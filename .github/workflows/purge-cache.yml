@@ -15,4 +15,4 @@ jobs:
           url: "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache"
           method: "POST"
           bearerToken: "${{ secrets.CLOUDFLARE_API_TOKEN }}"
-          data: "{ 'purge_everything': true }"
+          data: '{ "purge_everything": true }'

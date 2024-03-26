@@ -35,4 +35,4 @@ jobs:
           root: ""
 
       - name: Purge cache
-        uses: ./.github/workflows/purge-cache.yml
+        uses: hlqviet/huynhviet.com/.github/workflows/purge-cache.yml@main
