@@ -10,7 +10,9 @@ const Container = (props: ContainerProps) => {
   return (
     <>
       {title && (
-        <h1 class="text-4xl md:text-5xl mb-8 font-bold text-center">{title}</h1>
+        <h1 class="text-4xl md:text-5xl mb-14 font-bold text-center">
+          {title}
+        </h1>
       )}
       {children}
     </>
