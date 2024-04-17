@@ -1,0 +1,37 @@
+[
+  {
+    "name": "huynhviet.com",
+    "description": "This personal website",
+    "stack": ["TypeScript", "Preact", "Tailwind", "Fresh", "Deno"],
+    "role": "Author",
+    "url": "https://github.com/hlqviet/huynhviet.com"
+  },
+  {
+    "name": "Cloudflare Gateway Pihole Scripts",
+    "description": "Utilise Cloudflare Zero Trust Gateway as a DNS filtering solution",
+    "stack": ["JavaScript", "Node.js"],
+    "role": "Contributor",
+    "url": "https://github.com/mrrfv/cloudflare-gateway-pihole-scripts"
+  },
+  {
+    "name": "Next Portfolio",
+    "description": "The old portfolio",
+    "stack": ["TypeScript", "React", "Next.js", "Node.js"],
+    "role": "Author",
+    "url": "https://github.com/hlqviet/next-portfolio"
+  },
+  {
+    "name": "VTV Giai Tri Grabber",
+    "description": "Get video urls from the VTV Giai tri streaming service",
+    "stack": ["JavaScript", "React", "Node.js"],
+    "role": "Author",
+    "url": "https://github.com/hlqviet/vtv-giai-tri-grabber"
+  },
+  {
+    "name": "Docker-Py-Revanced",
+    "description": "One Click Python util to build all Revanced apps",
+    "stack": ["Python", "Docker", "GitHub Actions"],
+    "role": "Contributor",
+    "url": "https://github.com/nikhilbadyal/docker-py-revanced"
+  }
+]

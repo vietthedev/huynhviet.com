@@ -1,83 +1,23 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
+import Card from "@/components/Card.tsx";
+import Container from "@/components/Container.tsx";
+import Link from "@/components/Link.tsx";
+import List from "@/components/List.tsx";
+import Metadata from "@/components/Metadata.tsx";
+import Tag from "@/components/Tag.tsx";
+import Paragraph from "@/components/Typography/Paragraph.tsx";
+import Subtitle from "@/components/Typography/Subtitle.tsx";
+import Text from "@/components/Typography/Text.tsx";
+import Title from "@/components/Typography/Title.tsx";
 import IconBrandLinkedin from "tabler_icons_tsx/brand-linkedin.tsx";
 import IconMail from "tabler_icons_tsx/mail.tsx";
-import Card from "@/components/Card.tsx";
-import Tag from "@/components/Tag.tsx";
-import Link from "@/components/Link.tsx";
-import Metadata from "@/components/Metadata.tsx";
-import Title from "@/components/Typography/Title.tsx";
-import Paragraph from "@/components/Typography/Paragraph.tsx";
-import List from "@/components/List.tsx";
-import Text from "@/components/Typography/Text.tsx";
-import Subtitle from "@/components/Typography/Subtitle.tsx";
-import { ProjectRole } from "@/lib/enums.ts";
-import Container from "@/components/Container.tsx";
 
-const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "Tailwind",
-  "Material UI",
-  "Ant Design",
-  "Jest",
-  "React Testing Library",
-  "Cypress",
-  "Playwright",
-  "Rest API",
-  "GraphQL",
-  "gRPC",
-  "Windows",
-  "Linux",
-  "Visual Studio Code",
-  "GitHub Actions",
-  "Git",
-];
-
-const projects = [
-  {
-    name: "huynhviet.com",
-    description: "This personal website",
-    stack: ["TypeScript", "Preact", "Tailwind", "Fresh", "Deno"],
-    role: ProjectRole.Author,
-    url: "https://github.com/hlqviet/huynhviet.com",
-  },
-  {
-    name: "Cloudflare Gateway Pihole Scripts",
-    description:
-      "Utilise Cloudflare Zero Trust Gateway as a DNS filtering solution",
-    stack: ["JavaScript", "Node.js"],
-    role: ProjectRole.Contributor,
-    url: "https://github.com/mrrfv/cloudflare-gateway-pihole-scripts",
-  },
-  {
-    name: "Next Portfolio",
-    description: "The old portfolio",
-    stack: ["TypeScript", "React", "Next.js", "Node.js"],
-    role: ProjectRole.Author,
-    url: "https://github.com/hlqviet/next-portfolio",
-  },
-  {
-    name: "VTV Giai Tri Grabber",
-    description: "Get video URLs from the VTV Giai tri streaming service",
-    stack: ["JavaScript", "React", "Node.js"],
-    role: ProjectRole.Author,
-    url: "https://github.com/hlqviet/vtv-giai-tri-grabber",
-  },
-  {
-    name: "Docker-Py-Revanced",
-    description: "One Click Python util to build all Revanced apps",
-    stack: ["Python", "Docker", "GitHub Actions"],
-    role: ProjectRole.Contributor,
-    url: "https://github.com/nikhilbadyal/docker-py-revanced",
-  },
-];
+import introduction from "@/data/portfolio/introduction.json" with {
+  type: "json",
+};
+import projects from "@/data/portfolio/projects.json" with { type: "json" };
+import skills from "@/data/portfolio/skills.json" with { type: "json" };
 
 const Home = (props: PageProps) => {
   const { url } = props;
@@ -132,20 +72,9 @@ const Home = (props: PageProps) => {
             </picture>
           </div>
           <div>
-            <Paragraph>
-              Hi. My name is Việt Huỳnh (Viet Huynh). I am a software engineer
-              based in Ho Chi Minh City, Vietnam.
-            </Paragraph>
-            <Paragraph>
-              I have been working on web applications since 2015. Today I mainly
-              use JavaScript/TypeScript, React and Node.js with a variety of
-              other tools, libraries and frameworks.
-            </Paragraph>
-            <Paragraph>
-              Besides software development, I also have interests in other techy
-              stuff such as video encoding, audio equipments and motorbike
-              retrofitting. And I do play video games, too.
-            </Paragraph>
+            {introduction.map((paragraph) => (
+              <Paragraph key={paragraph}>{paragraph}</Paragraph>
+            ))}
           </div>
         </section>
 
