@@ -1,6 +1,6 @@
+import Hamburger from "@/components/Hamburger.tsx";
 import Link from "@/components/Link.tsx";
 import List from "@/components/List.tsx";
-import Hamburger from "@/components/Hamburger.tsx";
 import { NAV_ITEMS } from "@/lib/constants.ts";
 
 const Header = () => {

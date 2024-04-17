@@ -1,5 +1,5 @@
-import { Post } from "@/lib/types.ts";
 import Link from "@/components/Link.tsx";
+import { Post } from "@/lib/types.ts";
 import { formatPostDate } from "@/lib/utils.ts";
 
 const PostCard = (props: Post) => {

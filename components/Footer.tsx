@@ -1,11 +1,11 @@
-import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
-import IconBrandLinkedin from "tabler_icons_tsx/brand-linkedin.tsx";
-import { VNode } from "preact";
 import Link from "@/components/Link.tsx";
-import Title from "@/components/Typography/Title.tsx";
 import List from "@/components/List.tsx";
 import Text from "@/components/Typography/Text.tsx";
+import Title from "@/components/Typography/Title.tsx";
 import { NAV_ITEMS } from "@/lib/constants.ts";
+import { VNode } from "preact";
+import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
+import IconBrandLinkedin from "tabler_icons_tsx/brand-linkedin.tsx";
 
 const menus: {
   title: string;
