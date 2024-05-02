@@ -18,7 +18,7 @@
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "@tailwindcss/typography": "npm:/@tailwindcss/typography@0.5.12",
-    "daisyui": "npm:daisyui@4.10.3",
+    "daisyui": "npm:daisyui@4.10.4",
     "fresh-seo": "https://deno.land/x/fresh_seo@1.0.1/mod.ts",
     "preact": "https://esm.sh/preact@10.19.6",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.2",
