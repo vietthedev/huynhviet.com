@@ -1,3 +1,4 @@
+import { render } from "$gfm";
 import Link from "@/components/Link.tsx";
 import { Post } from "@/lib/types.ts";
 import { formatPostDate } from "@/lib/utils.ts";
@@ -18,10 +19,8 @@ const PostCard = (props: Post) => {
       >
         {formatPostDate(publishedAt)}
       </time>
-      <section class="mt-4 max-w-full prose">
-        <p>
-          {excerpt}
-        </p>
+      <section class="max-w-full prose">
+        <p dangerouslySetInnerHTML={{ __html: render(excerpt) }} />
         <Link href={`/blog/${slug}`}>Read more</Link>
       </section>
     </article>

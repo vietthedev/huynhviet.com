@@ -5,13 +5,6 @@ excerpt: 'Như thường lệ, sau giờ làm mình chờ hết mưa rồi cắp
 private: false
 ---
 
-Như thường lệ, sau giờ làm mình chờ hết mưa rồi cắp đít đi về. Đi được một đoạn
-thì nghe tiếng tít tít quen thuộc, nhìn xuống con xe thì đúng là tiếng kêu của
-chiếc SmartKey. Những tưởng đây chỉ là hiện tượng nhiễu sóng bình thường, nhưng
-không, không bình thường chút nào các bạn ạ. Tiếng tít tít quen thuộc bỗng trở
-nên kỳ lạ khi nó vang lên một cách liên tục. Bụng thầm nghĩ: "Thôi đệt, chuyến
-này lành ít dữ nhiều rồi."
-
 Mình bèn lập tức dừng xe bên đường, từ từ cầm chiếc remote lên và nhấn nút. Ôi
 đệt, ánh đèn báo hiệu chiếc remote đang mở đang ở mức độ le lói yếu ớt. Hẳn là
 viên pin cạn kiệt năng lượng rồi, hay là remote làm sao nhỉ? Thử tắt đi rồi mở

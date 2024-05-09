@@ -8,12 +8,6 @@ excerpt: |-
 private: false
 ---
 
-So I have survived the past 3 months taking various kinds of challenges from
-Harvey Nash Fresher Program to become a... Nasher (they use this word :p) - part
-of the Harvey Nash family.
-
-It all started with a phone call from...
-
 Wait! Let's get a while back to some time around June. Lemme see... Ah! It's
 June 4. That was when I started to look for a job. I created a résumé at
 VietnamWorks on that day. It took over a week until I received the first call

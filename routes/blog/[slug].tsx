@@ -1,13 +1,13 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handler, PageProps } from "$fresh/server.ts";
 import { render } from "$gfm";
-import { handler as getPost } from "@/routes/api/posts/[slug].ts";
-import { Post } from "@/lib/types.ts";
-import Container from "@/components/Container.tsx";
-import Metadata from "@/components/Metadata.tsx";
-import { formatPostDate } from "@/lib/utils.ts";
 import CommentWidget from "@/components/CommentWidget.tsx";
+import Container from "@/components/Container.tsx";
 import Link from "@/components/Link.tsx";
+import Metadata from "@/components/Metadata.tsx";
+import { Post } from "@/lib/types.ts";
+import { formatPostDate } from "@/lib/utils.ts";
+import { handler as getPost } from "@/routes/api/posts/[slug].ts";
 
 export const handler: Handler<Post> = async (req, ctx) => {
   const response = await getPost(req, ctx);
@@ -53,7 +53,9 @@ const PostPage = (props: PageProps<Post>) => {
         </time>
         <section
           class="my-4 border-y"
-          dangerouslySetInnerHTML={{ __html: render(content) }}
+          dangerouslySetInnerHTML={{
+            __html: render(`${excerpt}\n\n${content}`),
+          }}
         />
         <section>
           <Link href="/blog">&larr; Go back</Link>

@@ -5,10 +5,6 @@ excerpt: Nhà mình có nuôi một em mèo. Mình cũng không nhớ chính xá
 private: true
 ---
 
-Nhà mình có nuôi một em mèo. Mình cũng không nhớ chính xác là nuôi từ bao giờ,
-nhưng đó là khoảng thời gian mình còn Tiểu học. Thế nên là nó đã cùng mình trải
-qua quá trình trưởng thành cho đến tận bây giờ.
-
 Sống chung một nhà trong thời gian dài như thế, nó không chỉ là thú cưng, là bạn
 nữa mà là thành viên gia đình. Cả nhà ăn, ngủ, nghỉ, chơi, đều ít khi thiếu sự
 hiện diện của nó.
