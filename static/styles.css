@@ -4,6 +4,36 @@
 
 @layer components {
   .active-link {
-    @apply font-semibold text-sky-700 dark:text-sky-500
+    @apply font-semibold text-sky-700 dark:text-sky-500;
   }
+}
+
+.prose .anchor {
+  float: left;
+  margin-left: -20px;
+  padding-right: 4px;
+  line-height: 1;
+}
+
+.prose .anchor > .octicon {
+  display: inline;
+}
+
+.prose h1 .octicon-link,
+.prose h2 .octicon-link,
+.prose h3 .octicon-link,
+.prose h4 .octicon-link,
+.prose h5 .octicon-link,
+.prose h6 .octicon-link {
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.prose h1:hover .anchor .octicon-link,
+.prose h2:hover .anchor .octicon-link,
+.prose h3:hover .anchor .octicon-link,
+.prose h4:hover .anchor .octicon-link,
+.prose h5:hover .anchor .octicon-link,
+.prose h6:hover .anchor .octicon-link {
+  visibility: visible;
 }
