@@ -24,9 +24,9 @@
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.2",
     "preact/": "https://esm.sh/preact@10.22.0/",
     "tabler_icons_tsx/": "https://deno.land/x/tabler_icons_tsx@0.0.6/tsx/",
-    "tailwindcss": "npm:tailwindcss@3.4.3",
-    "tailwindcss/": "npm:/tailwindcss@3.4.3/",
-    "tailwindcss/plugin": "npm:/tailwindcss@3.4.3/plugin.js"
+    "tailwindcss": "npm:tailwindcss@3.4.13",
+    "tailwindcss/": "npm:/tailwindcss@3.4.13/",
+    "tailwindcss/plugin": "npm:/tailwindcss@3.4.13/plugin.js"
   },
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
   "nodeModulesDir": true
