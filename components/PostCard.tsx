@@ -1,4 +1,5 @@
-import { render } from "$gfm";
+import { render } from "@deno/gfm";
+
 import Link from "@/components/Link.tsx";
 import { Post } from "@/lib/types.ts";
 import { formatPostDate } from "@/lib/utils.ts";

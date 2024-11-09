@@ -94,10 +94,12 @@ const About = (props: PageProps) => {
               Instagram
             </Link>.
           </p>
-          <p>
-            Ah. Let me introduce this little family member to you. His name is
-            Sữa (Milk). I adopted him in December 2018 when he was over three
-            months old.
+          <section>
+            <p>
+              Ah. Let me introduce this little family member to you. His name is
+              Sữa (Milk). I adopted him in December 2018 when he was over three
+              months old.
+            </p>
             <figure>
               <picture>
                 <source
@@ -119,7 +121,7 @@ const About = (props: PageProps) => {
               </picture>
               <figcaption class="text-center">Sữa's photo</figcaption>
             </figure>
-          </p>
+          </section>
           <p>
             Alright. That is pretty much about me. If you want to connect with
             me then check out my presences on social networks:

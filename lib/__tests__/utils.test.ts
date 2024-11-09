@@ -1,5 +1,6 @@
-import { assert, assertEquals, assertExists } from "$std/assert/mod.ts";
-import { describe, it } from "$std/testing/bdd.ts";
+import { assert, assertEquals, assertExists } from "@std/assert";
+import { describe, it } from "@std/testing/bdd";
+
 import { getPost, getPosts } from "@/lib/utils.ts";
 
 describe(getPosts.name, () => {

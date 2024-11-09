@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handler, PageProps } from "$fresh/server.ts";
-import { render } from "$gfm";
+import { render } from "@deno/gfm";
+
 import CommentWidget from "@/components/CommentWidget.tsx";
 import Container from "@/components/Container.tsx";
 import Link from "@/components/Link.tsx";

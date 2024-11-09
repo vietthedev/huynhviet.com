@@ -1,5 +1,6 @@
-import { extract } from "$std/front_matter/yaml.ts";
-import { join } from "$std/path/posix/mod.ts";
+import { extractYaml } from "@std/front-matter";
+import { join } from "@std/path/posix";
+
 import { POST_DIRECTORY } from "@/lib/constants.ts";
 import { Post } from "@/lib/types.ts";
 
@@ -24,7 +25,7 @@ export const getPosts = async (includesPrivate = false): Promise<Post[]> => {
 export const getPost = async (slug: string): Promise<Post | null> => {
   try {
     const text = await Deno.readTextFile(join(POST_DIRECTORY, `${slug}.md`));
-    const { attrs, body } = extract<Post>(text);
+    const { attrs, body } = extractYaml<Post>(text);
 
     return {
       slug,
